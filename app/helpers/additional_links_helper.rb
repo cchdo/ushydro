@@ -1,0 +1,2 @@
+module AdditionalLinksHelper
+end

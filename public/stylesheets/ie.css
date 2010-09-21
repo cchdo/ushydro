@@ -1,0 +1,7 @@
+#menu ul li:hover ul, #menu ul li.over ul {
+	margin-left: -6.28em;
+}
+.content {
+	margin-top: -1em;
+	border-top: 5em solid #BEDEEA;
+}

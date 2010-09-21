@@ -1,0 +1,2 @@
+module HistoryGoalsHelper
+end
