@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/ushydro/!svn/ver/1/trunk/test/unit
+END
+oversight_committee_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ushydro/!svn/ver/1/trunk/test/unit/oversight_committee_test.rb
+END
+cruise_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ushydro/!svn/ver/1/trunk/test/unit/cruise_test.rb
+END
+cruises_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ushydro/!svn/ver/1/trunk/test/unit/cruises_test.rb
+END

@@ -1,0 +1,15 @@
+<div id="outreach_page_title" style="margin-top: 20px;">Data Centers for U.S. Repeat Hydrography Data</div>
+<div id="outreach_header_title">Links</div>
+<div id="dotted_bar"></div>
+
+<p>Below are links to all data sets for completed U.S. repeat cruises: </p>
+<ul>
+	<li><a href="cruise_data_links.html"> Cruise data links</a> at this website.</li>
+	<li><a href="Data_Centers_Contacts.html"> Summary of Data Center Contact information</a> (to submit data)</li>
+	<li><a href="http://cchdo.ucsd.edu/"> CLIVAR and Carbon Hydrographic Data Office:</a> Bottle data, pressure-sorted profile data</li>
+	<li><a href="http://cdiac.ornl.gov/"> Carbon Dioxide Information Analysis Center:</a> Bottle data, underway surface data (pCO2, temperature, salinity)</li>
+	<li><a href="ftp://ilikai.soest.hawaii.edu/caldwell_pub/adcp/INVNTORY/wocetot.html"> U.S. SADCP Data Center (NOAA/U. Hawaii):</a> Archived shipboard ADCP data</li>
+	<li><a href="http://currents.soest.hawaii.edu/clivar_co2/"> U. Hawaii ADCP Data Center :</a> Shipboard ADCP data and data products</li>
+	<li><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/"> LDEO Lowered ADCP Data Center:</a> Lowered ADCP data</li>
+	<li><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Surface Meteorology and Fluxes Center:</a> Shipboard meteorological data</li>
+</ul>

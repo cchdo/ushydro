@@ -1,0 +1,40 @@
+<div class="outreach_main_content">
+	<div id="outreach_page_title" style="margin-top: 20px;">Instruments We Use to Collect Data</div>
+	<div id="outreach_header_title">Introduction</div>
+	<div id="dotted_bar"></div>
+		
+		<p>There are a number of instruments and duties involved in obtaining water samples. Learn more about integral instruments, methods, and people that collect water samples while sustaining our data's integrity.</p>
+	
+	<!---INSTRUMENTS-->
+	<div id="outreach_division_header">Instruments</div>
+	<div id="dotted_bar"></div>	
+	
+	<img align="left" src='/images/learn_more/rossette/rossette_s.jpg' alt='target' />
+	<p id="cruise_sub_header">Rosettes</p>
+		<p>The CTD/rosette is a device that enables scientists to explore some of the deepest parts of the ocean, without getting wet! The CTD/rosette is an instrument that consists of sampling bottles attached to a metal framework. On the framework there are instruments that measures temperature, salinity, and depth. <a href="ctd_rosettes.html">Read more...</a></p>
+	
+	<img align="left" src='/images/learn_more/argo_s.jpg' alt='target' />	
+  	<p id="cruise_sub_header">Argo</p>
+  		<p>The 2007 "I8S" and "I9N" cruises on R/V Roger Revelle were part of a systematic and global re-occupation of select WOCE/JGOFS hydrographic sections to quantify changes in storage and transport of heat, fresh water, carbon dioxide (CO2), and related parameters.Scientific objectives for the cruises included providing data for model calibration and validation, carbon system studies, heat and freshwater storage and flux studies, deep and shallow water mass and ventilation studies, and calibration of autonomous sensors (such as Argo). <a href="argo_floats.html">Read more...</a></p>		
+
+	<!---MEASUREMENTS-->
+	<div id="outreach_division_header">Measurements</div>
+	<div id="dotted_bar"></div>
+		
+		<img align="left" src='/images/learn_more/tm3_s.png' alt='target' />	
+		<p id="cruise_sub_header">Trace Elements</p>
+	     	<p>There is no dust over the Southern Ocean.  Not enough for plants, at least.  Most dust particles are soils dragged from the continents by winds.  Antarctica is a desert, but the dirt there is locked under ice, and the winds that blow around Antarctica bring no dust to the surrounding oceans. <a href="trace_elements.html">Read more...</a></p>
+	
+	<!---On the job-->
+	<div id="outreach_division_header">On the Job</div>
+	<div id="dotted_bar"></div>
+    
+		<img align="left" src='/images/learn_more/bluecollar_oceanography/bluecollar_icon.jpg' alt='target' />	
+		<p id="cruise_sub_header">Blue Collar Oceanography</p>
+	     	<p>The people collecting the data behind climate change are not "climate change scientists," but technicians and engineers who are attracted to their jobs more for the lifestyle than for the glory of doing climate research. <a href="bluecollar_oceanography.html">Read more about what it takes to collect data...</a></p>	
+
+<p id="back_link"><a href="/learn_more_about">&lt; Back</a></p>
+  
+   
+  
+</div>	

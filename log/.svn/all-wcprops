@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/ushydro/!svn/ver/165/trunk/log
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/ushydro/!svn/ver/1/trunk/log/test.log
+END
+development.log
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/ushydro/!svn/ver/165/trunk/log/development.log
+END
+server.log
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/ushydro/!svn/ver/1/trunk/log/server.log
+END

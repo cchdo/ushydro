@@ -1,0 +1,30 @@
+<div class="outreach_main_content">
+	<div id="content_page">
+	<div id="outreach_page_title" style="margin-top: 20px;">A Day in the Life</div>
+	<div id="outreach_header_title">Teacher (I8S 2009)</div>
+	<div id="dotted_bar"></div>
+	
+	<!--THIS FIRST IMAGE WILL SHOW IN THE LIGHTBOX--> <a href="/images/grouppicweb.jpg" title="The USHydro team" rel="lightbox[trace_metals]"><!--EDIT THE REL TAG BETWEEN THE SQUARE BRACKETS TO GROUP SPECIFIC PHOTOS TOGETHER INTO ONE ALBUM--><!--THIS SECOND IMAGE WILL BE THE THUMBNAIL--><img src="/images/grouppicweb.jpg" width="250px" /></a><br /><br />
+	
+	<div id="blog_description">
+		Teacher: XYZ<br />
+		Cruise: I8S 2009 (Antarctica)<br />
+	</div>
+	
+	<div id="blog_date">Entry date: 5-2-09</div>
+	<p>rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg</p>
+	
+	<div id="blog_date">Entry date: 5-2-09</div>
+		<p>rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg rth dfh kdjsfg hfigsrj lskdgd  dg dsg dg gfsdrtg</p><br /><br />
+	
+
+	<div id="outreach_header_title">More blogs &amp; journals from I8S 2009</div>
+	<div id="dotted_bar"></div>
+		<ul style id="no_list_style">
+			<li><%= link_to_remote("XYZ, Chief Scientist",  :update => 'content_page', :url => { :controller=> 'day_in_life', :action=>'i8s_2009_chief_sci'}) %></li>
+			<li><%= link_to_remote("XYZ, Graduate Student",  :update => 'content_page', :url => { :controller=> 'day_in_life', :action=>'i8s_2009_grad'}) %></li>
+			<li><%= link_to_remote("XYZ, Technician",  :update => 'content_page', :url => { :controller=> 'day_in_life', :action=>'i8s_2009_tech'}) %></li>
+		</ul>
+	
+</div>
+</div>

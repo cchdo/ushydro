@@ -1,0 +1,182 @@
+<div id="outreach_page_title" style="margin-top: 20px;">Cruise Data Sets</div>
+<div id="outreach_header_title">Table of cruise data sets</div>
+<div id="dotted_bar"></div>
+
+
+
+<body>
+  <table id="box-table-a" summary="Links to cruise data sets"> 
+		<thead>
+		<tr>  
+    		<th align="center" colspan="14">Links to Cruise Data  Sets</hd>
+		</tr> 
+		<tr>  
+			<th scope="col">Cruise</th>  
+			<th scope="col">Dates</th>  
+			<th scope="col">Expocode</th>  
+			<th scope="col">Ship</th>   
+			<th scope="col">Number of Stations</th>  
+			<th scope="col" class="wider">Cruise report, Station map, CTD and Bottle data</th>  
+			<th scope="col">Underway Navigation, Bathymetry, Seawater, pCO2 data</th>  
+			<th scope="col">Underway ADCP data</th>  
+			<th scope="col">Lowered ADCP data</th>  
+			<th scope="col">Underway Met. data</th> 	
+		</tr>
+		</thead> 
+		<tr>  
+      	<td>A16N</td>  
+	      <td>6/19/03 - <br />8/11/03</td>  
+	      <td>33RO200306_01</td>  
+	      <td><a href="http://www.moc.noaa.gov/rb/">Brown</a></td>  
+	      <td>150</td>  
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RO200306_01">CCHDO</a></td>  
+	      <td><a href="http://www.aoml.noaa.gov/ocd/gcc/rvbrown_data2003.php">NOAA / AOML</a></td>  
+	      <td class='wider'><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td> 
+		</tr>
+		<tr>  
+      	<td>A20</td>  
+	      <td>9/22/03 - <br />10/20/03</td>  
+	      <td>316N200309</td>  
+	      <td><a href="http://www.whoi.edu/marops/research_vessels/knorr/index.html">Knorr</a></td>  
+	      <td>88</td>  
+          <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=316N200309">CCHDO</a></td> 
+	      <td>USHYDRO</td>  
+	      <td class='wider'><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td>
+		</tr> 
+		<tr>  
+      	<td>A22</td>  
+	      <td>10/23/03 - <br />11/13/03</td>  
+	      <td>316N200310</td>  
+	      <td><a href="http://www.whoi.edu/marops/research_vessels/knorr/index.html">Knorr</td>  
+	      <td>82</td>  
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=316N200310">CCHDO</a></td>  
+	      <td>USHYDRO</td>  
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td> 
+		</tr> 
+		<tr>  
+      	<td>P2</td>  
+	      <td>6/15/04 - <br />8/27/04</td>  
+	      <td>318M200406</span></td>  
+	      <td><a href="http://shipsked.ucsd.edu/Ships/Melville/">Melville</a></td>  
+	      <td>190</td>  
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=318M200406">CCHDO</a></td>   
+	      <td>USHYDRO</td>  
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td> 
+		</tr> 
+		<tr>  
+      	<td>P16S</td>  
+	      <td>1/9/05 - <br />2/22/05</td>  
+	      <td>33RR200501</td>  
+	      <td><a href="http://shipsked.ucsd.edu/Ships/Roger_Revelle/">Revelle</a></td>  
+	      <td>111</td>  
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RR200501">CCHDO</a></td>
+	      <td>USHYDRO</td>  
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td> 
+		</tr> 
+		<tr>  
+      	<td>A16S</td>  
+	      <td>1/11/05 - <br />2/26/05</td>  
+	      <td>33RO200501</td>  
+	      <td><a href="http://www.moc.noaa.gov/rb/">Brown</a></td>  
+	      <td>121</td>  
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RO200501">CCHDO</a></td>     
+	      <td><a href="http://www.aoml.noaa.gov/ocd/gcc/rvbrown_data2005.php">NOAA / AOML</a></td>  
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td> 
+		</tr> 
+		<tr>  
+      	<td>P16N <br />P16C</td>  
+	      <td>2/13/06 - <br />3/30/06</td>  
+	      <td>325020060213</td>  
+	      <td><a href="http://www.ocean.washington.edu/2004/services/vessels/tgt/tgt.html">Thompson</a></td>  
+	      <td>84</td>  
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=325020060213">CCHDO</a></td>       
+	      <td>USHYDRO</td>  
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td> 
+		</tr> 
+		<tr>  
+      	<td>I8S</td>  
+	      <td>2/4/07 - <br />3/17/07</td>  
+	      <td>33RR20070204</td>  
+	      <td><a href="http://shipsked.ucsd.edu/Ships/Roger_Revelle/">Revelle</a></td>  
+	      <td>88</td>  
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RR20070204">CCHDO</a></td>      
+	      <td>USHYDRO</td>  
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td<a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met.  DAC</a></td>
+		</tr> 
+		<tr>  
+      	<td>I9N</td>  
+	      <td>3/22/07 - <br />5/2/07</td>  
+	      <td>33RR20070322</td>  
+	      <td><a href="http://shipsked.ucsd.edu/Ships/Roger_Revelle/">Revelle</a></td>  
+	      <td>111</td>  
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RR20070322">CCHDO</a></td>  
+	      <td>USHYDRO</td>  
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td> 
+		</tr> 
+		<tr>  
+      	<td>P18</td>  
+	      <td>12/15/07 - <br />2/23/08</td>  
+	      <td>33RO20071215</td>  
+	      <td><a href="http://www.moc.noaa.gov/rb/">Brown</a></td>  
+	      <td>174</td>
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RO20071215">CCHDO</a></td>     	
+          <td><a href="http://www.aoml.noaa.gov/ocd/gcc/rvbrown_data2007.php">NOAA / AOML</a></td> 
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>  
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>
+          <td></td>
+      </tr> 
+		<tr>  
+      	<td>I6S</td>  
+	      <td>2/4/08 - <br />3/17/08</td>  
+	      <td>33RR20080204</td>  
+	      <td><a  href="http://shipsked.ucsd.edu/Ships/Roger_Revelle/">Revelle</a></td> 
+	      <td>106</td>
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RR20080204">CCHDO</a></td>
+	      <td></td>
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>
+	      <td><a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">LDEO</a></td>  
+	      <td><a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">FSU Met. DAC</a></td>
+      </tr>
+		<tr>  
+      	<td>I5</td>  
+	      <td>3/19/09 - <br /> </td>  
+	      <td>33RR20090320</td>  
+	      <td><a  href="http://shipsked.ucsd.edu/Ships/Roger_Revelle/">Revelle</a></td> 
+		  <td></td>
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RR20090320">CCHDO</a></td>
+	      <td></td>
+	      <td><a href="http://currents.soest.hawaii.edu/clivar_co2/">U. Hawaii</a></td>
+	      <td></td>
+	      <td></td>
+      </tr>		
+		<tr>  
+	      <td>I7N</td>  
+		  <td>8/24/09 - <br /> </td>  
+	      <td>33RR200908XX</td>  
+	      <td><a  href="http://shipsked.ucsd.edu/Ships/Roger_Revelle/">Revelle</a></td> 
+		  <td></td>
+	      <td class="wider"><a href="http://cchdo.ucsd.edu/data_access?ExpoCode=33RR200908XX">CCHDO</a></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	      </tr>
+    </table>

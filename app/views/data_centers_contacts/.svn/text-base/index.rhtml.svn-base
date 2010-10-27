@@ -1,0 +1,78 @@
+<div id="page_title"> Data Management Contacts</div>
+<div id="header_title">Data management centers and contacts <span class="smaller">(as of August 22,2005)</span></div>
+
+<table id="box-table-b">
+	<tr>
+		<th>Repeat Hydrography Oversight Committee<br /><span class="smaller">(Pre-cruise/post-cruise observations lists &amp; data tracking)</span></th>
+		<th>CLIVAR and Carbon Hydrographic Data Office (CCHDO) <span class="smaller"><br />(Preliminary &amp; final CTDO profiles &amp; station summaries)</span></th>
+	</tr>
+	<tr>
+		<td>
+	  		<p>Lynne D. Talley (<a href="mailto:ltalley@ucsd.edu">ltalley@ucsd.edu</a>),
+	  		Co-chair</p>
+     		<p>Richard A. Feely (<a href="mailto:Richard.A.Feely@noaa.gov">Richard.A.Feely@noaa.gov</a>),
+	  		Co-chair</p>
+     		<p>Susan Piercy (<a href="mailto:spiercy@ucsd.edu">spiercy@ucsd.edu</a>), 
+		Administrative support</p><br />
+			<p class="smaller">
+				Scrips Institute of Oceanography (UCSD) 0230 <br />
+				Ph:(858) 822-4035<br />
+				Fax: (858) 822-4036<br />
+				Website:<a href="http://ushydro.ucsd.edu/">http://ushydro.ucsd.edu/</a>
+			</p>
+		<td>	
+			<p>Dr. James Swift (<a href="mailto:jswift@ucsd.edu">jswift@ucsd.edu</a>), Director</p>
+			<p>Mr. Stephen C. Diggs (<a href="mailto:sdiggs@ucsd.edu">sdiggs@ucsd.edu</a>), Data Manager</p><br />
+			<p class="smaller">
+				Scrips Institute of Oceanography (UCSD) 0214 <br />
+				Ph: (858) 534-3387 or (858) 534-7383 <br />
+				Fax: (858) 534-7383<br />
+				Website: <a href="http://cchdo.ucsd.edu">http://cchdo.ucsd.edu</a><br />
+				Group email: <a href="mailto:cchdo@ucsd.edu">cchdo@ucsd.edu</a><br />
+				Please submit data through our website.
+			</p>		
+		</td>
+	</tr>
+	<tr>
+		<th>Carbon Dioxide Information Analysis Center (CDIAC)<br /><span class="smaller">(Discrete and underway: temperature, salinity, and other chemistry- DIC, TAlk, pH, pCO2)</span></th>
+		<th>Shipboard meteorological data acquisition center <br /><span class="smaller">(Underway meteorological data from shipboard system)</span></th>		
+	</tr>
+	<tr>
+		<td>
+			<p>Dr. Alex Kozyr (<a href="mailto:kozyra@ornl.gov">kozyra@ornl.gov</a>), Director</p><br />
+			<p class="smaller">
+				Oak Ridge National Laboratory <br />
+				Website: <a href="http://cdiac.ornl.gov/">http://cdiac.ornl.gov/</a>
+			</p>	
+		</td>
+		<td>
+			<p>Mr. Shawn Smith (<a href="mailto:smith@coaps.fsu.edu">smith@coaps.fsu.edu), Director</p><br />
+			<p class="smaller">
+				Florida State University <br />
+				Website: <a href="http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml">http://www.coaps.fsu.edu/RVSMDC/CLIVAR/html/data.shtml</a>
+			</p>	
+		</td>
+	</tr>
+	<tr>
+		<th>Shipboard ADCP data acquisition center<br /><span class="smaller">(Underway ADCP data)</span></th>
+		<th>Lowered ADCP data acquisition center<br /><span class="smaller">(Lowered ADCP data)</span></th>		
+	</tr>
+	<tr>
+		<td>
+			<p>Dr. Jules Hummon (<a href="mailto:hummon@hawaii.edu">hummon@hawaii.edu</a>), Director</p><br />
+			<p class="smaller">
+				University of Hawaii<br />
+				Website: <a href="file://localhost/caldwell_pub/adcp/INVNTORY/wocetot.html">ftp://ilikai.soest.hawaii.edu/caldwell_pub/adcp/INVNTORY/wocetot.html</a>
+			</p>	
+		</td>
+		<td>
+			<p>Dr. Andreas Thurnherr (<a href="mailto:smith@coaps.fsu.edu">smith@coaps.fsu.edu), Director</p><br />
+			<p class="smaller">
+				Lamont-Doherty Earth Observatory <br />
+				Website: <a href="http://ladcp.ldeo.columbia.edu/ladcp/clivar/">http://ladcp.ldeo.columbia.edu/ladcp/clivar/</a>
+			</p>	
+		</td>
+	</tr>					
+
+
+

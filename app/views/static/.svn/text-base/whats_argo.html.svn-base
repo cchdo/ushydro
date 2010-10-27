@@ -1,0 +1,52 @@
+<div class="outreach_main_content">
+<div id="outreach_header_title">ARGO Floats</div>
+<div id="dotted_bar"></div>
+
+<div class="boxed">
+
+	<div id="question_header">What is ARGO?</div>
+	<p>Argo is a global array of 3,000 free-drifting profiling floats that measures the temperature and salinity of the upper 2000 m of the ocean.  This allows, for the first time, continuous monitoring of the temperature, salinity, and velocity of the upper ocean, with all data being relayed and made publicly available within hours after collection.</p>	
+	
+	<div id="blog_date">Positions of the floats that have delivered data within the last 30 days (<a href="http://argo.jcommops.org/">AIC</a>, <a href="http://w3.jcommops.org/FTPRoot/Argo/Status/status.txt">updated daily</a>): </div>
+
+	<!--THIS FIRST IMAGE WILL SHOW IN THE LIGHTBOX--> <a href="http://www-hrx.ucsd.edu/www-argo/statusbig.gif" title="Global positions of ARGO floats" rel="lightbox[trace_metals]"><!--EDIT THE REL TAG BETWEEN THE SQUARE BRACKETS TO GROUP SPECIFIC PHOTOS TOGETHER INTO ONE ALBUM--><!--THIS SECOND IMAGE WILL BE THE THUMBNAIL--><img src='http://www-hrx.ucsd.edu/www-argo/status.jpg' align='middle' alt='target' /></a>
+	
+	<div id="question_header">Why do we need Argo?</div>
+	
+	<p>We are increasingly concerned about global change and its regional impacts. Sea level is rising at an accelerating rate of 3 mm/year, Arctic sea ice cover is shrinking and high latitude areas are warming rapidly. Extreme weather events cause loss of life and enormous burdens on the insurance industry. Globally, 8 of the 10 warmest years since 1860, when instrumental records began, were in the past decade.</p>
+
+	<p>These effects are caused by a mixture of long-term climate change and natural variability. Their impacts are in some cases beneficial (lengthened growing seasons, opening of Arctic shipping routes) and in others adverse (increased coastal flooding, severe droughts, more extreme and frequent heat waves and weather events such as severe tropical cyclones).</p>
+
+	<p>Understanding (and eventually predicting) changes in both the atmosphere and ocean are needed to guide international actions, to optimize governments’ policies and to shape industrial strategies. To make those predictions we need improved models of climate and of the entire earth system (including socio-economic factors).</p>
+
+	<p>Lack of sustained observations of the atmosphere, oceans and land have hindered the development and validation of climate models. An example comes from a recent analysis which concluded that the currents transporting heat northwards in the Atlantic and influencing western European climate had weakened by 30% in the past decade. This result had to be based on just five research measurements spread over 40 years. Was this change part of a trend that might lead to a major change in the Atlantic circulation, or due to natural variability that will reverse in the future, or is it an artifact of the limited observations?</p>
+
+	<p>In 1999, to combat this lack of data, an innovative step was taken by scientists to greatly improve the collection of observations inside the ocean through increased sampling of old and new quantities and increased coverage in terms of time and area.</p>
+
+	<p>That step was Argo.</p>
+	<a href="ftp://kakapo.ucsd.edu/pub/argo/slides/argo.avi"><img src="http://www.argo.ucsd.edu/newani-t.jpg"></a>
+	<p id="blog_date"><a href="ftp://kakapo.ucsd.edu/pub/argo/slides/argo.avi">argo.avi</a> is a float animation that explains the purpose and method of Argo.</p><br />
+		
+	
+	
+	<div id="question_header">Where is Argo now?</div>
+	
+	<p>Argo deployments began in 2000 and by November 2007 the array is 100% complete. Today's tally of floats is shown in the figure above. While the Argo array is currently complete at 3000 floats, to be maintained at that level, national commitments need to provide about 800 floats per year (which has occurred for the past three years).</p>
+
+	<p>Besides float deployment, Argo has worked hard to develop two separate data streams: real time and delayed mode. A real time data delivery and quality control system has been established that delivers 90% of profiles to users via two global data centers within 24 hours. A delayed mode quality control system (DMQC) has been established and 50% of all eligible profiles have had DMQC applied.</p>
+
+	<p>Float reliability has improved each year and the float lifetime has been extended. Argo has developed a large user community in universities, government labs and meteorological/climate analysis/forecasting centers. The need for global Argo observations will continue indefinitely into the future, though the technologies and design of the array will evolve as better instruments are built, models are improved, and more is learned about ocean variability.</p>
+	
+	<div id="question_header">Who Collaborates with Argo?</div>
+	
+	<p>Argo is a major contributor to the <a href="http://wcrp.wmo.int/">WCRP's</a> Climate Variability and Predictability Experiment (<a href="http://www.clivar.org/">CLIVAR</a>) project and to the Global Ocean Data Assimilation Experiment (<a href="http://www.bom.gov.au/bmrc/ocean/GODAE/">GODAE</a>). The Argo array is part of the Global Climate Observing System/Global Ocean Observing System <a href="http://www.wmo.ch/web/gcos/gcoshome.html">GCOS</a>/ <a href="http://ioc.unesco.org/goos/">GOOS</a>).</p>
+
+</div><br />
+
+<div id="outreach_header_title">Additional Argo Links</div>
+<div id="dotted_bar"></div>
+	<ul id="no_list_style">
+		<li><a href="http://www.argo.ucsd.edu/Frpictures.html">More ARGO photos</a></li>
+		<li><a href="http://www.argo.ucsd.edu/FrFAQ.html">ARGO FAQs</a></li>
+	</ul>
+</div>	

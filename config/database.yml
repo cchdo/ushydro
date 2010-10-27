@@ -12,10 +12,10 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
   adapter: mysql
-  database: ushydro
+  database: cchdo
   username: jfields
   password: c@keandc00kies
-  host: watershed.ucsd.edu
+  host: cchdo.ucsd.edu
   encoding: utf8
 
 # Warning: The database defined as 'test' will be erased and
@@ -34,5 +34,5 @@ production:
   database: ushydro
   username: jfields
   password: c@keandc00kies
-  host: watershed.ucsd.edu
+  host: localhost
   encoding: utf8

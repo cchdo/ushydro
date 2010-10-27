@@ -1,0 +1,11 @@
+<div class="outreach_main_content">
+	<div id="outreach_page_title" style="margin-top: 20px;">Photo Gallery Archive</div>
+	<div id="outreach_header_title">Shrunken Styrofoam</div>
+	<div class="gallery">
+		<ul class="twocol clear">
+			<li><!--THIS FIRST IMAGE WILL SHOW IN THE LIGHTBOX--> <a href="/images/gallery/styrofoam/styrofoam1.jpg" title="Styrofoam heads are shrunken by submerging them in the ocean's deep depths. The deep water's high pressue produces these shrunken heads!" rel="lightbox[styrofoam]"><!--EDIT THE REL TAG BETWEEN THE SQUARE BRACKETS TO GROUP SPECIFIC PHOTOS TOGETHER INTO ONE ALBUM--><!--THIS SECOND IMAGE WILL BE THE THUMBNAIL--><img src="/images/gallery/styrofoam/styrofoam1_tb.jpg" /></a></li>
+			<li><!--THIS FIRST IMAGE WILL SHOW IN THE LIGHTBOX--> <a href="/images/gallery/styrofoam/styrofoam2.jpg" title="" rel="lightbox[styrofoam]"><!--EDIT THE REL TAG BETWEEN THE SQUARE BRACKETS TO GROUP SPECIFIC PHOTOS TOGETHER INTO ONE ALBUM--><!--THIS SECOND IMAGE WILL BE THE THUMBNAIL--><img src="/images/gallery/styrofoam/styrofoam2_tb.jpg" /></a></li>
+		</ul>
+	</div>	
+	<p id="back_gallery"><a href="/gallery_lifestyle.html">Back</a></p>	
+</div>

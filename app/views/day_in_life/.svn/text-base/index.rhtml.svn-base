@@ -1,0 +1,67 @@
+<div class="outreach_main_content">
+	<div id="content_page">
+	<div id="outreach_page_title" style="margin-top: 20px;">A Day in the Life</div>
+	<div id="outreach_header_title">Introduction</div>
+	<div id="dotted_bar"></div>
+		
+		<p>Browse the archive of people </p>
+	
+	<!---2010-->
+
+	
+	<!---2009-->
+	<div id="outreach_division_header">2009</div>
+	<div id="dotted_bar"></div>	
+	
+	<p id="cruise_sub_header">I5 Southern Ocean</p>
+	<p id="outreach_descriptive_text">Chief Scientist: <a href="i8s_2009_chief_sci.html">Dr. Jim Swift</a></p>
+	<ul id="no_list_style_left_margin">
+		<li>A look through the years at an extraordinary career in oceanography</li>
+	</ul>	
+
+	<!---2008-->
+	<div id="outreach_division_header">2008</div>
+	<div id="dotted_bar"></div>	
+	
+	<p id="cruise_sub_header">I6S </p>
+	<p id="outreach_descriptive_text">Technician: <a href="i6s_2008_tech.html">Jon Meyer</a></p>
+	<ul id="no_list_style_left_margin">
+		<li>Q and A - Jon Meyer on his job, life at sea, and advice for the new sailor.</li>
+	</ul>
+	
+	<!---2007-->
+	<div id="outreach_division_header">2007</div>
+	<div id="dotted_bar"></div>	
+	
+	<p id="cruise_sub_header">I8S Antarctic</p>
+	<p id="outreach_descriptive_text">Technician: <a href="http://danparktica.blogspot.com/2007/01/welcome.html">Dan Park</a></p>
+	<ul id="no_list_style_left_margin">
+		<li>Dan Park Chronicles his journey through the Antarctic. Read his blog.</li>
+	</ul>
+	<p id="cruise_sub_header">I8S Antarctic</p>
+	<p id="outreach_descriptive_text">Graduate Student: <a href="i8s_2007_grad_becker.rhtml">Joseph Becker</a></p>
+	<ul id="no_list_style_left_margin">
+		<li>Graduate student experiences at sea</li>
+	</ul>
+	<p id="cruise_sub_header">I8S Antarctic</p>
+	<p id="outreach_descriptive_text">Graduate Student: <a href="i8s_2007_grad_ullman.rhtml">David Ullman</a></p>
+	<ul id="no_list_style_left_margin">
+		<li>Graduate student experiences at sea</li>
+	</ul>
+	
+	<!---2006-->
+
+
+	<!---2005-->
+
+
+	<!---2004-->
+
+	
+	<!---2003-->
+
+
+<p id="back_link"><a href="/life_at_sea">&lt; Back</a></p>
+
+</div>	
+</div>

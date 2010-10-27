@@ -1,0 +1,13 @@
+<div class="outreach_main_content">
+	<div id="outreach_page_title" style="margin-top: 20px;">Photo Gallery Archive</div>
+	<div id="outreach_header_title">Icy Waters</div>
+	<div class="gallery">
+		<ul class="twocol clear">
+			<li><!--THIS FIRST IMAGE WILL SHOW IN THE LIGHTBOX--> <a href="/images/gallery/icy/icy1.jpg" title="" rel="lightbox[animal_sightings]"><!--EDIT THE REL TAG BETWEEN THE SQUARE BRACKETS TO GROUP SPECIFIC PHOTOS TOGETHER INTO ONE ALBUM--><!--THIS SECOND IMAGE WILL BE THE THUMBNAIL--><img src="/images/gallery/icy/icy1_tb.jpg" /></a></li>
+			<li><!--THIS FIRST IMAGE WILL SHOW IN THE LIGHTBOX--> <a href="/images/gallery/icy/icy2.jpg" title="" rel="lightbox[animal_sightings]"><!--EDIT THE REL TAG BETWEEN THE SQUARE BRACKETS TO GROUP SPECIFIC PHOTOS TOGETHER INTO ONE ALBUM--><!--THIS SECOND IMAGE WILL BE THE THUMBNAIL--><img src="/images/gallery/icy/icy2_tb.jpg" /></a></li>
+			<li><!--THIS FIRST IMAGE WILL SHOW IN THE LIGHTBOX--> <a href="/images/gallery/icy/icy3.jpg" title="" rel="lightbox[animal_sightings]"><!--EDIT THE REL TAG BETWEEN THE SQUARE BRACKETS TO GROUP SPECIFIC PHOTOS TOGETHER INTO ONE ALBUM--><!--THIS SECOND IMAGE WILL BE THE THUMBNAIL--><img src="/images/gallery/icy/icy3_tb.jpg" /></a></li>
+			<li><!--THIS FIRST IMAGE WILL SHOW IN THE LIGHTBOX--> <a href="/images/gallery/icy/icy4.jpg" title="" rel="lightbox[animal_sightings]"><!--EDIT THE REL TAG BETWEEN THE SQUARE BRACKETS TO GROUP SPECIFIC PHOTOS TOGETHER INTO ONE ALBUM--><!--THIS SECOND IMAGE WILL BE THE THUMBNAIL--><img src="/images/gallery/icy/icy4_tb.jpg" /></a></li>
+		</ul>
+	</div>	
+	<p id="back_gallery"><a href="/gallery_out_at_sea.html">Back</a></p>
+</div>

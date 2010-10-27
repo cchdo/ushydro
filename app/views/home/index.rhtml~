@@ -1,0 +1,53 @@
+<div class="outreach_main_content">
+
+<div id="outreach_page_title" style="margin-top: 20px;">Welcome to the U.S. CO2/Repeat Hydrography Program</div>
+<div id="outreach_header_title">Introduction</div>
+<div id="dotted_bar"></div>
+
+	<p>The US Global Ocean Carbon and Repeat Hydrography program began its at-sea operations in 2003, supporting the objectives of the US Carbon Cycle Program and US CLIVAR.  This site provides background on the scientific rationale and scope of the integrated approach to a global observational program for carbon, hydrographic and tracer measurements.  Working documents are included on implementation and timing of sections, core measurements, and data management protocol.  This site provides links to the data sets collected in the CO2/Repeat Hydrography Program.</p>
+
+	<div id="outreach_header_title">News</div>
+	<div id="dotted_bar"></div>
+
+       	<p>Interested in participating with this program?</p>
+       	<p>We are currently seeking junior level scientists (postdocs, assistant level scientists) for participation as co-chief scientists and graduate students for 
+       	general participation. <a href = "/contacts">Click HERE for contact information.</a></p>
+
+
+	<div id="outreach_header_title">Featured on Outreach</div>
+	<div id="dotted_bar"></div>
+	
+	<!-- <div class="vc_img">
+		<img src="virtual_cruise/home/images/ve_banner.png" style="height: 80px;">		
+	</div> -->
+	
+	<a href="/virtual_cruise/index.html">
+	<div class='bottom_navigation'>
+		<img src="/virtual_cruise/home/images/ve_banner.png" style="height: 40px;">		
+					<p class="bottom_navigation_header">What's Life Like at Sea?</p>
+					<p>Tour the R/V Roger Revelle, watch documentaries, and follow a cruise from planning to final data.</p>
+	</div>
+	</a>
+	
+	<div id="outreach_header_title">Links</div>
+	<div id="dotted_bar"></div>
+
+		<table class="links_table">
+			<tr>
+				<td>
+	   				<ul id="no_list_style">
+	   					<li><a href = "http://cchdo.ucsd.edu/">CLIVAR and Carbon Hydrographic Data Office (CCHDO) </a></li>
+       					<li><a href = "http://ioc3.unesco.org/ioccp/Index.html">International Ocean Carbon Coordination Project </a></li>
+					</ul>
+				</td>
+				<td>
+	   				<ul id="no_list_style">
+       					<li><a href = "http://www.clivar.org/">CLIVAR homepage </a></li>
+       					<li><a href = "http://www.clivar.org/carbon_hydro">CLIVAR/CO2 program </a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+
+</div>
+

@@ -1,0 +1,2 @@
+module CruiseDataLinksHelper
+end

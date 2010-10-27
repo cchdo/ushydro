@@ -1,0 +1,30 @@
+<div class="outreach_main_content">
+	<div id="content_page">
+	<div id="outreach_page_title" style="margin-top: 20px;">Life At Sea</div>
+	
+	<div id="outreach_header_title">Introduction</div>
+	<div id="dotted_bar"></div>
+	<p>What is it like to participate it one of our research cruises? Find out by browsing through our archive of blogs, testimonies, photo gallery and multimedia vault.</p>
+	<div id="outreach_division_header">A Day in the Life</div>
+	<div id="dotted_bar"></div>
+	<p>View our archive of blogs and testimonies from various USHydro participants. <a href="day_in_life">Read more...</a></p>
+	<div id="outreach_division_header">Experiences</div>
+	<div id="dotted_bar"></div>
+	<p>What do participants do in their spare time on research cruises? Find out! Browse through various activities that participants busy themselves with during their free time. <a href="outreach_experiences">Read more...</a></p>
+	<div id="outreach_division_header">Photo Gallery</div>
+	<div id="dotted_bar"></div>
+	<p>See for yourself what life is like out at sea. Browse through our photo gallery archive.<a href="photo_gallery">Read more...</a></p>
+	<div id="outreach_division_header">Multimedia Vault</div>
+	<div id="dotted_bar"></div>
+	<p>View our archive or various videos, podcasts and more! <a href="video_vault">Read more...</a></p>
+
+
+	<div id="outreach_division_header">External Links</div>
+	<div id="dotted_bar"></div>
+	<ul id="no_list_style">
+
+	</ul>
+	
+	<p id="back_link"><a href="/outreach">&lt; Back</a></p>
+</div>
+</div>

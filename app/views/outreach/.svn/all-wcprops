@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/ushydro/!svn/ver/169/trunk/app/views/outreach
+END
+instruments.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ushydro/!svn/ver/60/trunk/app/views/outreach/instruments.rhtml
+END
+gallery.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/ushydro/!svn/ver/60/trunk/app/views/outreach/gallery.rhtml
+END
+_nav_menu_outreach.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ushydro/!svn/ver/169/trunk/app/views/outreach/_nav_menu_outreach.rhtml
+END
+a_day_in_the_life.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ushydro/!svn/ver/60/trunk/app/views/outreach/a_day_in_the_life.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ushydro/!svn/ver/168/trunk/app/views/outreach/index.rhtml
+END
+_index_more.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ushydro/!svn/ver/60/trunk/app/views/outreach/_index_more.rhtml
+END

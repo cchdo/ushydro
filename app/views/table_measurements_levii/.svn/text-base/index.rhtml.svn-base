@@ -1,0 +1,326 @@
+<div id="page_title"> Level II Measurements </div>
+<div id="header_title">Table of measurements</div>
+
+<table id="box-table-a" summary="Cruises table">
+	<thead>
+		<tr>
+			<th align="center" colspan="13">
+			U.S. Repeat Hydrography Level II Measurements
+			</th>
+		</tr>		
+ 		<tr>
+  		   <th scope="col">Year</th>
+		   <th scope="col">Cruise</th>
+		   <th scope="col">Days</th>
+		   <th scope="col">Ship and lead agency</th>
+		   <th scope="col">pH*</th>
+		   <th scope="col">Discrete pCO<span class="smaller">2*</span></th>
+		   <th scope="col">C14</th>
+		   <th scope="col">C13</th>
+		   <th scope="col">CCL4*/SF6**</th>
+		   <th scope="col">Trace metals*</th>
+		   <th scope="col">POC &amp; Transm**</th>
+		   <th scope="col">CDOM*</th>
+		   <th scope="col">I129</th>
+		</tr>
+	</thead>
+	<tbody>
+  	<tr>
+		<td>2003</td>
+		<td>A16N</td>
+		<td>49</td>
+		<td>Brown <br> NOAA</td>
+		<td>M</td>
+		<td>W</td>
+		<td>M</td>
+		<td>M</td>
+		<td></td>
+		<td>M/L</td>
+		<td>B/G</td>
+		<td>S/N/C</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2003</td>
+		<td>A20	</td>
+		<td>29</td>
+		<td>Knorr <br> NSF</td>
+		<td>nc</td>
+		<td>nc</td>
+		<td>M/K</td>
+	    <td>Q</td>
+		<td>B/S/F</td>
+		<td>nc</td>
+		<td>G</td>
+		<td>S/N/C</td>
+		<td>S/JS</td>
+	</tr>
+	<tr>
+		<td>2003</td>
+	    <td>A22</td>
+		<td>21</td>
+		<td>Knorr <br> NSF</td>
+		<td>nc</td>
+		<td>nc</td>
+		<td>M/K</td>
+		<td>Q</td>
+		<td>B/S/F</td>
+		<td>nc</td>
+		<td>G</td>
+		<td>S/N/C</td>
+		<td>S/JS</td>
+	</tr>
+	<tr>
+		<td>2004</td>
+		<td>P2</td>
+		<td>73</td>
+		<td>Melville <br> NSF</td>
+		<td>nc</td>
+		<td>nc</td>
+		<td>M/K</td>
+		<td>M/K</td>
+		<td>S/F</td>
+		<td>M/L</td>
+		<td>G</td>
+		<td>S/N/C</td>
+		<td>nc</td>
+	</tr>
+	<tr>
+		<td>2005</td>
+		<td>A16S</td>
+		<td>48</td>
+		<td>Brown <br> NOAA</td>
+		<td>M</td>
+		<td>W</td>
+		<td>M/K</td>
+		<td>M</td>
+		<td>B/S/F</td>
+		<td>nc</td>
+		<td>B</td>
+		<td>S/N/C</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2005</td>
+		<td>P16S</td>
+		<td>40</td>
+		<td>Revelle <br> NSF</td>
+		<td>nc</td>
+		<td>nc</td>
+		<td>M/K</td>
+		<td>M</td>
+		<td></td>
+		<td>M/L</td>
+		<td>G</td>
+		<td>S/N/C</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2006</td>
+		<td>P16N</td>
+		<td>39</td>
+		<td>Thompson <br> NOAA</td>
+		<td>M</td>
+		<td>W/F</td>
+		<td>M/K</td>
+		<td>Q</td>
+		<td>W</td>
+	    <td>M/L</td>
+		<td>G</td>
+		<td>S/N/C</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2007</td>
+		<td>I8S</td>
+		<td>38</td>
+		<td>Revelle <br> NSF</td>
+	    <td>nc</td>
+		<td>nc</td>
+		<td>M/K</td>
+		<td>M/K</td>
+		<td>B</td>
+		<td>M/L</td>
+		<td>G</td>
+		<td>S/N/C</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2007</td>
+		<td>I9N</td>
+		<td>34</td>
+		<td>Revelle <br> NSF</td>
+		<td>nc</td>
+		<td>nc</td>
+		<td>M/K</td>
+		<td>M/K</td>
+		<td>B/S/F</td>
+		<td>M/L</td>
+		<td>G</td>
+		<td>S/N/C</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2007</td>
+		<td>P18</td>
+		<td>32</td>
+		<td>Brown <br> NOAA</td>
+		<td>M</td>
+		<td>W/F</td>
+		<td>Q</td>
+		<td>Q</td>
+		<td>B/S/F</td>
+		<td></td>
+		<td>G</td>
+		<td>N</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2008</td>
+		<td>P18</td>
+		<td>35</td>
+		<td>Brown <br> NOAA</td>
+		<td>M</td>
+		<td>W/F</td>
+		<td>M/K</td>
+		<td>M/K</td>
+		<td>B/S/F</td>
+	    <td></td>
+		<td>G</td>
+		<td>N</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>2008</td>
+		<td>I6S</td>
+		<td>42</td>
+		<td>Revelle <br> UNOLS</td>
+		<td>D</td>
+		<td>nc</td>
+		<td>M/K</td>
+		<td>M/K</td>
+		<td>B/S/F</td>
+		<td></td>
+		<td>G</td>
+		<td>N</td>
+		<td></td>
+	</tr>
+	<tr>
+ 		<td>2009</td>
+ 		<td>I5</td>
+ 		<td>57</td>
+ 		<td>Revelle</td>
+ 		<td>D</td>
+ 		<td></td>
+ 		<td>M/K</td>
+ 		<td>M/K</td>
+ 		<td>B/S/F</td>
+ 	    <td>M/L</td>
+ 		<td>G</td>
+ 		<td>S</td>
+ 		<td></td>
+	</tr>
+	<tr>
+		<td>2009</td>
+		<td>P6</td>
+		<td>89</td>
+		<td>Meville</td>
+		<td>M</td>
+		<td>nc</td>
+		<td>M/K</td>
+		<td>M/K</td>
+		<td>F/W</td>
+		<td>M/L<span class="smaller"> (leg 1)</span></td>
+		<td>G</td>
+		<td>S/N</td>
+		<td></td>
+	</tr>
+	<tr>
+	   	<td>2010</td>
+	   	<td>A13.5</td>
+	   	<td>62</td>
+	   	<td>NOAA</td>
+	   	<td>D</td>
+	   	<td>W</td>
+	   	<td>M/K</td>
+	   	<td>M/K</td>
+	   	<td>B</td>
+	   	<td>nc</td>
+	   	<td>G</td>
+	   	<td>N</td>
+	   	<td></td>
+	</tr>	
+	<tr>
+   		<td>2010</td>
+   		<td>S4P	</td>
+   		<td>60</td>
+   		<td>Palmer</td>
+   		<td></td>
+   		<td>W/F</td>
+   		<td>M/K</td>
+   		<td>M/K</td>
+   		<td>B/S/F</td>
+   	    <td>M/L</td>
+   		<td></td>
+   		<td></td>
+   		<td></td>
+   	</tr>
+	<tr>
+   		<td>2010</td>
+   		<td>A10</td>
+   		<td>30</td>
+   		<td>NOAA</td>
+   		<td></td>
+   		<td></td>
+   		<td></td>
+   		<td></td>
+   		<td></td>
+   	    <td></td>
+   		<td></td>
+   		<td></td>
+   		<td></td>
+   	</tr>
+	<tr>
+		<td></td>
+		<td>I7N</td>
+		<td></td>
+		<td>Revelle</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+
+</tbody>
+</table><br/>
+
+<p class="indent">
+<span class="bold">*</span> Funded<br/>
+
+<span class="bold">**</span> limited collection on present cruises<br/>
+
+<span class="bold">nc:</span>  not collected<br/>
+
+<span class="bold">pH:</span> M =Millero, D = Dickson<br/>
+
+<span class="bold">pCO2:</span> W =Wanninkhof, F = Feely<br/>
+
+<span class="bold">C14:</span> M/G=McNichol, Gagnon C13<br/>
+
+<span class="bold">C13:</span> Q=Quay  M/K = McNichol Key<br/>
+
+<span class="bold">CCL4/ SF6 B/S/F/W</span> = Bullister, Smethie, Fine, Warner<br/>
+
+<span class="bold">Trace metals:</span>  M/L = Measures , Landing<br/>
+
+<span class="bold">POC & transmissometer:</span> B/ G = Bishop/ Gardner<br/>
+
+<span class="bold">CDOM S/N/C</span>=Siegel, Nelson, Carlson<br/>
+
+<span class="bold">I-129: S</span> = Smethie, JS = John Smith
+</p>
