@@ -1,49 +1,0 @@
-10
-
-dir
-178
-http://cchdoimac3.ucsd.edu/svn/ushydro/trunk/test
-http://cchdoimac3.ucsd.edu/svn/ushydro
-
-
-
-2009-02-17T19:15:20.595390Z
-59
-cberys
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4a20286f-7df2-4767-80fa-ea5500ce10c1
-
-unit
-dir
-
-test_helper.rb
-file
-
-
-
-
-2009-06-30T23:16:43.000000Z
-30478106e9df8977e79fc045df799e29
-2008-10-15T21:40:28.618431Z
-1
-myshen
-
-functional
-dir
-
-fixtures
-dir
-
