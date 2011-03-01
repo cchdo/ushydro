@@ -41,9 +41,12 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   
+  # map.connect 'outreach/:content', :controller => 'outreach', :action => 'content'
+
   # map.connect virtual_cruise_path => "/virtual_cruise/"
   
   # map.connect ':virtual_cruise', :controller => 'static', :action => 'rerout'
   # Mapping for static controller
   map.connect '*path', :controller => 'static'
+
 end
