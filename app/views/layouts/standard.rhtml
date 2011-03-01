@@ -119,7 +119,11 @@
 			outreachpages = %w[life_at_sea learn_more_about outreach day_in_life interactive_features photo_gallery video_vault static outreach_experiences outreach_instruments outreach_measurements outreach_posters outreach_technology outreach_data outreach_ships]
 			homepage = %w[home]
                         s4ppages = %w[s4p s4p_photos s4p_weekly_reports].collect{|x|"#{x}.html"}
-			pagename = params[:path][0] or ''
+			if params[:path]
+				 pagename = params[:path][0]
+			else
+				 pagename = ''
+			end
 #outreachpages.include? page and (not s4ppages.include?(page))
 			if outreachpages.include?(controller) and not (s4ppages.include?(pagename)) %><%= render :partial => 'outreach/nav_menu_outreach'%>
 		<% elsif homepage.include? controller %> <%= render :partial => 'home/nav_menu_main'%>
