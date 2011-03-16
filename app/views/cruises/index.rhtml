@@ -47,7 +47,7 @@
 	</th></tr>		
  	<tr>
   		<th scope="col">Dates</th>
-		<th scope="col">Cruise<br /><span class='smaller'>(for documentation and results see the <a href="cruise_data_links" style="color: #635299">Data Links</a> page)</span></th>
+		<th scope="col">Cruise<br /><span class='smaller'>(click on active links for documentation and resuls)</span></th>
 	   <th scope="col">Days</th>
 	   <th scope="col">Ports</th>
 	   <th scope="col">Contact/Chief Scientist <br /><span class='smaller'>(overall coordinator: Jim Swift, SIO)</span></th>
@@ -55,7 +55,12 @@
 	</tr>
 	</thead>
 	<tbody>
-  	<tr>
+
+        <% for cruise in @cruises %>
+        <tr>
+        	<td><%= cruise.start_date %> - <%= cruise.end_date %></td><td><% if cruise.expocode %><%= link_to("#{cruise.name}", "http://cchdo.ucsd.edu/data_access/show_cruise?ExpoCode=#{cruise.expocode}") %><% else %> <%= cruise.name %><% end %> </td><td><%= cruise.days %></td><td> <%= cruise.start_port.name %>Start port to end port</td><td>PI </td><td><%= cruise.ship.name %>
+	<% end %>
+  	<!-- <tr>
 	  <td>06/19/03-07/10/03</td>
 	  <td>A16N, leg 1</td>
 	  <td>22</td>
@@ -284,6 +289,6 @@
 	  <td>Port Louis/Muscat</td>
 	  <td></td>
 	  <td>UNOLS</td>
-	</tr>
+	</tr>  -->
 	</tbody>	
 </table>
