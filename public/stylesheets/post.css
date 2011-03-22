@@ -1,0 +1,48 @@
+#content, .nav { width: 50%; }
+.progress {
+  background-color: #bdf;
+  padding: 0.25em;
+  width: 50%;
+}
+p { text-align: justify; }
+
+caption, .date, h4.date { font-style: italic; }
+caption { font-size: 0.75em; }
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+}
+.header {
+  background-color: #ccc;
+  padding: 0.25em;
+}
+
+.nav { text-align: center; }
+.older { float: left; }
+.newer { float: right; }
+
+p.img-left, p.img-right {
+  max-width: 226px;
+  margin-top: 0;
+}
+p.img-left {
+  float: left;
+  margin-right: 1em;
+}
+p.img-right {
+  float: right;
+  margin-left: 1em;
+}
+p.img-right img, p.img-left img {
+  margin-left: 0;
+}
+td img { margin-left: 0; }

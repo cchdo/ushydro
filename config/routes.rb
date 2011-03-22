@@ -34,6 +34,9 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "home"
 
   # See how all your routes lay out with "rake routes"
+  map.blog 'blog/:post_type/:post_date', :controller => 'blog', :action => 'show'
+  map.progress_positions 'progress/positions', :controller => 'progress', :action => 'positions'
+  map.progress_posts 'progress/posts', :controller => 'progress', :action => 'posts'
 
   # Install the default routes as the lowest priority.
   #map.connect ':controller/:action/:id.:format', :format => 'html'

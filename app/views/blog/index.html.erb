@@ -1,0 +1,54 @@
+<% content_for :title do -%>Correspondence<% end -%>
+<style type="text/css">
+h1 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: #cdf;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 1.5em;
+}
+h3 {
+	text-align: left;
+	font-size: 1.25em;
+	color: #66c;
+}
+.excerpt {
+	max-width: 50%;
+}
+</style>
+
+<h1>Weekly Reports from Sea</h1>
+
+<div class="nav">
+  <span class="older">
+    <% if @prev -%><%= link_to 'Older', @prev -%><% end -%>
+  </span>
+  <span class="toplevel">
+    <%= link_to 'Map view', '/progress/index' -%>
+  </span>
+  <span class="newer">
+    <% if @next -%><%= link_to 'Newer', @next -%><% end -%>
+  </span>
+</div>
+
+<% @posts.each do |post| -%>
+<div class="post">
+  <h3><%= post.post_date.strftime('%d %b %Y') -%></h3>
+  <div class="excerpt"><%= render :inline => post.excerpt -%></div>
+  <a href="<%= "/blog/#{post.post_type}/#{post.post_date}" -%>">Read more&hellip;</a>
+</div>
+<% end -%>
+
+<div class="nav">
+  <span class="older">
+    <% if @prev -%><%= link_to 'Older', @prev -%><% end -%>
+  </span>
+  <span class="toplevel">
+    <%= link_to 'Map view', '/progress/index' -%>
+  </span>
+  <span class="newer">
+    <% if @next -%><%= link_to 'Newer', @next -%><% end -%>
+  </span>
+</div>

@@ -1,0 +1,34 @@
+<% content_for :title do -%><%= @prettydt -%><% end -%>
+<%= stylesheet_link_tag "post" %>
+
+<div class="nav">
+  <span class="older">
+    <%if @prev_post -%><%= link_to @prev_prettydt, @prev_post -%><% end -%>
+  </span>
+  <span class="toplevel">
+    <%= link_to 'Home', '/blog/index' -%>
+  </span>
+  <span class="newer">
+    <%if @next_post -%><%= link_to @next_prettydt, @next_post -%><% end -%>
+  </span>
+</div>
+<div style="clear:both"></div>
+
+<h1><%= @prettydt -%></h1>
+<div><%= link_to "#{@lat}, #{@lng}", "/progress/index" -%></div>
+
+<div id="content">
+<%= render :file => @post -%>
+</div>
+
+<div class="nav">
+  <span class="older">
+    <%if @prev_post -%><%= link_to @prev_prettydt, @prev_post -%><% end -%>
+  </span>
+  <span class="toplevel">
+    <%= link_to 'Home', '/blog/index' -%>
+  </span>
+  <span class="newer">
+    <%if @next_post -%><%= link_to @next_prettydt, @next_post -%><% end -%>
+  </span>
+</div>
