@@ -1,54 +1,39 @@
 <% content_for :title do -%>Correspondence<% end -%>
-<style type="text/css">
-h1 {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	background-color: #cdf;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	font-size: 1.5em;
-}
-h3 {
-	text-align: left;
-	font-size: 1.25em;
-	color: #66c;
-}
-.excerpt {
-	max-width: 50%;
-}
-</style>
 
-<h1>Weekly Reports from Sea</h1>
+<div class="outreach_main_content">
+	<div id="outreach_page_title" style="margin-top: 20px;">S4P: Weekly Reports from Sea Blog</div>
 
-<div class="nav">
-  <span class="older">
-    <% if @prev -%><%= link_to 'Older', @prev -%><% end -%>
-  </span>
-  <span class="toplevel">
-    <%= link_to 'Map view', '/progress/index' -%>
-  </span>
-  <span class="newer">
-    <% if @next -%><%= link_to 'Newer', @next -%><% end -%>
-  </span>
-</div>
+	<div class="entry">
+		<div class="nav">
+		  <span class="older">
+		    &nbsp;<% if @prev -%><%= link_to 'Older', @prev -%><% end -%>
+		  </span>
+		  <span class="toplevel">
+		    <%= link_to 'Map view', '/progress/index' -%>
+		  </span>
+		  <span class="newer">
+		    <% if @next -%><%= link_to 'Newer', @next -%><% end -%>&nbsp;
+		  </span>
+		</div>
 
-<% @posts.each do |post| -%>
-<div class="post">
-  <h3><%= post.post_date.strftime('%d %b %Y') -%></h3>
-  <div class="excerpt"><%= render :inline => post.excerpt -%></div>
-  <a href="<%= "/blog/#{post.post_type}/#{post.post_date}" -%>">Read more&hellip;</a>
-</div>
-<% end -%>
+		<% @posts.each do |post| -%>
+		<div class="post">
+		  <h1 class="blog"><%= post.post_date.strftime('%d %b %Y') -%> (<%= post.post_type -%>)</h1>
+		  <div class="blog_desc"><%= render :inline => post.excerpt -%></div>
+		  <a class="read_more" href="<%= "/blog/#{post.post_type}/#{post.post_date}" -%>">Read more</a>
+		</div>
+		<% end -%>
 
-<div class="nav">
-  <span class="older">
-    <% if @prev -%><%= link_to 'Older', @prev -%><% end -%>
-  </span>
-  <span class="toplevel">
-    <%= link_to 'Map view', '/progress/index' -%>
-  </span>
-  <span class="newer">
-    <% if @next -%><%= link_to 'Newer', @next -%><% end -%>
-  </span>
+		<div class="nav">
+		  <span class="older">
+		    &nbsp;<% if @prev -%><%= link_to 'Older', @prev -%><% end -%>
+		  </span>
+		  <span class="toplevel">
+		    <%= link_to 'Map view', '/progress/index' -%>
+		  </span>
+		  <span class="newer">
+		    <% if @next -%><%= link_to 'Newer', @next -%><% end -%>&nbsp;
+		  </span>
+		</div>
+	</div>
 </div>

@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<div class="header">
-<h3>RVIB Nathaniel B. Palmer NBP-1102/S04P Weekly Scientific Report 03</h3>
-<h4 class="date">10 March 2011</h4>
-<h4>from Jim Swift, SIO, Chief Scientist and Alex Orsi, TAMU, Co-Chief Scientist</h4>
+
+<div id="weekly_report">
+	<div class="progress">
+	<h3>RVIB Nathaniel B. Palmer NBP-1102/S04P Weekly Scientific Report 03</h3>
+	<h4 class="date">10 March 2011</h4>
+	<h4>from Jim Swift, SIO, Chief Scientist and Alex Orsi, TAMU, Co-Chief Scientist</h4>
+	</div>
 </div>
 
-<p class="progress">
-ca. 67&deg;S, 153.6&deg;W<br>
+<div class="header">
+(ca. <%= link_to "#{@lat}, #{@lng}", "/progress/index" -%>) <!--ca. 67&deg;S, 153.6&deg;W--><br>
 0030 Z (1430 local)<br>
 -0.8 &deg;C (31 &deg;F)<br>
 winds 11 knots from S<br>
 on station 041<br>
-</p>
+</div>
 
+<div class="entry_body">
 <p>The storm which stopped our work last Thursday morning finally abated early
 Saturday. Since then we have been working steadily on our measurement
 program, without weather or equipment delays. We are making good progress,
@@ -24,8 +28,8 @@ its closest relatives remain consistently warmer and slightly saltier than
 observed during the Akademik Ioffe S04P cruise in 1992.</p>
 
 <p class="img-right">
-<%= image_tag 'blog/aurora_Orion__Juan_Botella.jpeg' -%><br>
-<caption>Aurora australis and constellation Orion (Juan Botella)</caption>
+<a href="/images/s4p/aurora_Orion_Juan_Botella.jpg" rel="lightbox[s4p]" title="Aurora Australis and constellation Orion"><img src="/images/s4p/aurora_Orion_Juan_Botella.jpg" width="130" alt="Aurora Australis and constellation Orion" title="Aurora Australis and constellation Orion"></a><br>
+<span class="caption">Aurora Australis and constellation Orion<br> (Juan Botella)</span>
 </p>
 
 <p>We will soon turn from our eastward course and follow 150&deg;W south to the
@@ -45,13 +49,8 @@ report for our decision.</p>
 
 <p>Small breaks provided by nature the past week include icebergs (the
 reliable scenic highlight of working near Antarctica), the Aurora Australis
-a few times (we've included two photos shot by Juan Botella, our PolarTREC
-teacher), and a close-up visit by a few humpback whales.</p>
-
-<p class="img-left">
-<%= image_tag 'blog/aurora_Chimenea_Juan_Botella.jpeg' -%><br>
-<caption>Aurora australis (Juan Botella)</caption>
-</p>
+a few times (we've included two photos shot - <em>see above right and <a name="aurora_chimenea" href="#chimenea">below</a></em> - by Juan Botella, our PolarTREC
+teacher), and a close-up visit by a few <a name="humpback" href="#tail">humpback whales</a>.</p>
 
 <p>The galley staff is great at keeping morale (and waistlines) at a maximum.
 Fresh bagels made a surprise appearance, the cookie supply seems endless,
@@ -73,3 +72,15 @@ conversations, music is heard from time to time. All is well aboard the
 Nathaniel B. Palmer.</p>
 
 <p>Jim and Alex</p>
+
+<table class="entry_table">
+	<tr>
+		<td><a  href="/images/s4p/aurora_Chimenea_Juan_Botella.jpg" rel="lightbox[s4p]" title="Aurora Chimenea"><img src="/images/s4p/aurora_Chimenea_Juan_Botella.jpg" alt="Aurora Chimenea" title="Aurora Chimenea" width="130"></a><br /></td>
+		<td><a href="/images/s4p/whale_tail_Juan_Botella.jpg" rel="lightbox[s4p]" title="Whale tail"><img src="/images/s4p/whale_tail_Juan_Botella.jpg" width="130" alt="Whale tail" title="Whale tail"></a></td>
+	</tr>
+	<tr>
+		<td><span class="caption">Aurora Chimenea (Juan Botella)</span><br><a name="chimenea" href="#aurora_chimenea">Back to paragraph</a></td>
+		<td><span class="caption">Whale tail (Juan Botella)</span><br><a name="tail" href="#humpback">Back to paragraph</a></td>
+	</tr>
+</table>
+</div>

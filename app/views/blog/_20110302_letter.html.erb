@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 
-<p class="progress">
-Wednesday, 02 March 2011, 1435 local time<br>
-67.0&deg;S, 180&deg;E/180&deg;W (on the date line)<br>
-0.5 &deg;C / 33 &deg;F<br>
-wind 15 knots from NW<br>
-en route to station 022<br>
-</p>
+<div id="weekly_report">
+	<div class="progress">
+	<h1>Wednesday, 02 March 2011, 1435 local time</h1>
+	<em>(<%= link_to "#{@lat}, #{@lng}", "/progress/index" -%> - <!--67.0&deg;S, 180&deg;E/180&deg;W--> on the date line)</em><br>
+	0.5 &deg;C / 33 &deg;F<br>
+	wind 15 knots from NW<br>
+	en route to station 022
+	</div>
+</div>
 
+<div class="entry_body">
 <p>Dear Family, Friends, and Colleagues,</p>
 
 <p class="img-right">
-<%= image_tag 'blog/nasty_weather.jpeg' -%><br>
-<caption>Nasty weather (Swift)</caption>
+<a href="/images/s4p/nasty_weather.jpg" rel="lightbox[s4p]" title="Nasty weather"><img src="/images/s4p/nasty_weather.jpg" width="130" alt="Nasty weather" title="Nasty weather"></a><br>
+<span class="caption">Nasty weather (Swift)</span>
 </p>
 
 <p>One of the inescapable aspects of working in the Southern Ocean is storms -
@@ -46,8 +49,8 @@ Some people suffer more than others from seasickness, though the fortunate
 majority of us have now adapted to the ship's motion in stormy seas.</p>
 
 <p class="img-left">
-<%= image_tag 'blog/wave_on_deck_3.jpeg' -%><br>
-<caption>Wave breaking on deck (NBP)</caption>
+<a href="/images/s4p/wave_on_deck_2.jpg" rel="lightbox[s4p]" title="Wave breaking on deck"><img src="/images/s4p/wave_on_deck_2.jpg" width="130" alt="Wave breaking on deck" title="Wave breaking on deck"></a><br>
+<span class="caption">Wave breaking on deck (NBP)</span>
 </p>
 
 <p>The biggest storm, with a long spell of sustained winds over 50 knots,
@@ -69,8 +72,8 @@ the last planned station shortly before the time, barring emergencies, that
 we must head to port.</p>
 
 <p class="img-right">
-<%= image_tag 'blog/leopard_seal_2.jpeg' -%><br>
-<caption>Leopard seal (Swift)</caption>
+<a href="/images/s4p/leopard_seal_2.jpg" rel="lightbox[s4p]" title="Leopard seal"><img src="/images/s4p/leopard_seal_2.jpg" width="130" alt="Leopard seal" title="Leopard seal"></a><br>
+<span class="caption">Leopard seal (Swift)</span>
 </p>
 
 <p>The other day, while we were waiting out a storm, I noticed we were
@@ -105,10 +108,10 @@ NBP-1102 / S04P<br>
 </p>
 
 <p>
-<table style="margin-left:auto;margin-right:auto;">
+<table class="entry_table">
   <tr>
-    <td><%= image_tag 'blog/wave_damaged_cargo_van.jpeg' -%></td>
-    <td><%= image_tag 'blog/4_crabeater_seals.jpeg' -%></td>
+    <td><a href="/images/s4p/wave_damaged_cargo_van.jpg" rel="lightbox[s4p]" title="Cargon van damaged by waves"><img src="/images/s4p/wave_damaged_cargo_van.jpg" width="130" alt="Cargon van damaged by waves" title="Cargon van damaged by waves"></a></td>
+    <td><a href="/images/s4p/4_crabeater_seals.jpg" rel="lightbox[s4p]" title="Crabeater seals"><img src="/images/s4p/4_crabeater_seals.jpg" width="130" alt="Crabeater seals" title="Crabeater seals"></a></td>
   </tr>
   <tr>
     <td><span class="caption">Cargon van damaged by waves (Swift)</span></td>
@@ -116,3 +119,4 @@ NBP-1102 / S04P<br>
   </tr>
 </table>
 </p>
+</div>

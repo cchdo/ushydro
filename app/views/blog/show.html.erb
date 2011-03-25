@@ -1,34 +1,34 @@
 <% content_for :title do -%><%= @prettydt -%><% end -%>
-<%= stylesheet_link_tag "post" %>
 
-<div class="nav">
-  <span class="older">
-    <%if @prev_post -%><%= link_to @prev_prettydt, @prev_post -%><% end -%>
-  </span>
-  <span class="toplevel">
-    <%= link_to 'Home', '/blog/index' -%>
-  </span>
-  <span class="newer">
-    <%if @next_post -%><%= link_to @next_prettydt, @next_post -%><% end -%>
-  </span>
-</div>
-<div style="clear:both"></div>
+<div class="outreach_main_content">
+	<div id="outreach_page_title" style="margin-top: 20px;">S4P: <%= render :inline => "#{@post_container.post_date.strftime('%d %b %Y')}" -%> (<%= render :inline => "#{@post_container.post_type}" -%>)</div>
+	<div class="entry">
+		<div class="nav">
+		  <span class="older">
+		    &nbsp;<%if @prev_post -%><%= link_to "#{@prev_prettydt} (#{@prev_container.post_type})", @prev_post -%><% end -%>
+		  </span>
+		  <span class="homelevel">
+		    <%= link_to 'Home', '/blog/index' -%>
+		  </span>
+		  <span class="newer">
+		    <%if @next_post -%><%= link_to "#{@next_prettydt} (#{@next_container.post_type})", @next_post -%><% end -%>&nbsp;
+		  </span>
+		</div>
 
-<h1><%= @prettydt -%></h1>
-<div><%= link_to "#{@lat}, #{@lng}", "/progress/index" -%></div>
+		<div>
+		<%= render :file => @post -%>
+		</div>
 
-<div id="content">
-<%= render :file => @post -%>
-</div>
-
-<div class="nav">
-  <span class="older">
-    <%if @prev_post -%><%= link_to @prev_prettydt, @prev_post -%><% end -%>
-  </span>
-  <span class="toplevel">
-    <%= link_to 'Home', '/blog/index' -%>
-  </span>
-  <span class="newer">
-    <%if @next_post -%><%= link_to @next_prettydt, @next_post -%><% end -%>
-  </span>
+		<div class="nav">
+		  <span class="older">
+		    &nbsp;<%if @prev_post -%><%= link_to "#{@prev_prettydt} (#{@prev_container.post_type})", @prev_post -%><% end -%>
+		  </span>
+		  <span class="homelevel">
+		    <%= link_to 'Home', '/blog/index' -%>
+		  </span>
+		  <span class="newer">
+		    <%if @next_post -%><%= link_to "#{@next_prettydt} (#{@next_container.post_type})", @next_post -%><% end -%>&nbsp;
+		  </span>
+		</div>
+	</div>
 </div>

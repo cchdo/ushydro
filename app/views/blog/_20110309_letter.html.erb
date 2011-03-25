@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 
-<p class="progress">
-Wednesday, 09 March 2011, 1515 local time<br>
-67.0&deg;S, 157.5&deg;W<br>
--1 &deg;C / 30 &deg;F<br>
-wind 17 knots from SW<br>
-on station 039<br>
-</p>
+<div id="weekly_report">
+	<div class="progress">
+	<h1>Wednesday, 09 March 2011, 1515 local time</h1>
+	<em>(<%= link_to "#{@lat}, #{@lng}", "/progress/index" -%>) <!--67.0&deg;S, 157.5&deg;W--></em><br>
+	-1 &deg;C / 30 &deg;F<br>
+	wind 17 knots from SW<br>
+	on station 039
+	</div>
+</div>
+	
+<div class="entry_body">
 
 <p>Dear Family, Friends, and Colleagues,</p>
 
@@ -24,22 +28,20 @@ comforting measure of progress. Of course, we very much enjoy the little
 breaks nature provides...</p>
 
 <p class="img-right">
-<%= image_tag 'blog/sunset_by_Aimee_Neeley.jpeg' -%><br>
-<caption>Iceberg at sunset (Aimee Neeley)</caption>
+<a href="/images/s4p/sunset_by_Aimee_Neeley.jpg" rel="lightbox[s4p]" title="Iceberg at sunset"><img src="/images/s4p/sunset_by_Aimee_Neeley.jpg" width="130" alt="Iceberg at sunset" title="Iceberg at sunset"></a><br>
+<span class="caption">Iceberg at sunset<br> (Aimee Neeley)</span>
 </p>
 
  <p>Icebergs are a reliable scenic highlight of working
  near Antarctica, and when we chance upon one on a
- sunny moment (one of my photos is attached) or at
+ sunny moment (one of my <a name="iceberg" href="#mountain_iceberg">photos</a> is attached) or at
  sunrise or sunset (attached unenhanced sunset photo
- taken by Aimee Neeley), it's time to bring out
+ taken by Aimee Neeley <em>on the right</em>), it's time to bring out
  the cameras.</p>
 
-<div style="clear:both;"></div>
-
 <p class="img-left">
-<%= image_tag 'blog/aurora_Orion__Juan_Botella.jpeg' -%><br>
-<caption>Whale tail (Juan Botella)</caption>
+<a href="/images/s4p/aurora_Orion_Juan_Botella.jpg" rel="lightbox[s4p]" title="Aurora Australis"><img src="/images/s4p/aurora_Orion_Juan_Botella.jpg" width="130" alt="Aurora Australis" title="Aurora Australis"></a><br>
+<span class="caption">Aurora Australis<br> (Juan Botella)</span>
 </p>
 
  <p>Along with some clear periods during days has come
@@ -47,19 +49,17 @@ breaks nature provides...</p>
  Aurora Australis ("Southern Lights") a few times.
  Our PolarTREC teacher, Juan Botella, captured some
  excellent night photos from a moving ship (!). I
- have attached two, enhanced for light level only.
+ have attached two (<em>See left and <a name="aurora_chimenea" href="#chimenea">below</a></em>), enhanced for light level only.
  Notice the stars of Orion's belt in one of them?</p>
 
-<div style="clear:both;"></div>
-
 <p class="img-right">
-<%= image_tag 'blog/whale_tail_Juan_Botella.jpeg' -%><br>
-<caption>Whale tail (Juan Botella)</caption>
+<a href="/images/s4p/whale_tail_Juan_Botella.jpg" rel="lightbox[s4p]" title="Whale tail"><img src="/images/s4p/whale_tail_Juan_Botella.jpg" width="130" alt="Whale tail" title="Whale tail"></a><br>
+<span class="caption">Whale tail (Juan Botella)</span>
 </p>
 
  <p>A few humpback whales visited the ship the other day,
  playing around (or feeding?) a bit before swimming off.
- Juan captured some nice photos (one is attached).</p>
+ Juan captured some nice photos (one is attached - <em>see right</em>).</p>
 
 <p>Nature is not the only source of welcome breaks: the galley staff is great
 at keeping morale (and waistlines) at a maximum. Fresh bagels made a
@@ -79,7 +79,15 @@ Nathaniel B. Palmer.</p>
 Chief Scientist<br>
 NBP-1102 / S04P</p>
 
-<p style="text-align:center;">
-<%= image_tag 'blog/mountain_berg_2_JHS.jpeg' -%><br>
-<caption>Mountain iceberg (Swift)</caption>
-</p>
+<table class="entry_table">
+	<tr>
+		<td><a href="/images/s4p/mountain_berg_2_JHS.jpg" rel="lightbox[s4p]" title="Mountain iceberg"><img src="/images/s4p/mountain_berg_2_JHS.jpg" width="130" alt="Mountain iceberg" title="Mountain iceberg"></a></td>
+		<td><a  href="/images/s4p/aurora_Chimenea_Juan_Botella.jpg" rel="lightbox[s4p]" title="Aurora Chimenea"><img src="/images/s4p/aurora_Chimenea_Juan_Botella.jpg" alt="Aurora Chimenea" title="Aurora Chimenea" width="130"></a><br /></td>
+		
+	</tr>
+	<tr>
+		<td><span class="caption">Mountain iceberg (Swift)</span><br><a name="mountain_iceberg" href="#iceberg">Back to paragraph</a></td>
+		<td><span class="caption">Aurora Chimenea (Juan Botella)</span><br><a name="chimenea" href="#aurora_chimenea">Back to paragraph</a></td>
+	</tr>
+</table>
+</div>

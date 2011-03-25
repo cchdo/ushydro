@@ -1,4 +1,5 @@
 class BlogController < ApplicationController
+  layout 's4p'
   def index
     @posts = Post.all(:order => "received_dt desc")
     @next = nil

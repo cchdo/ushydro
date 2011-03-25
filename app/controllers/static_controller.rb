@@ -2,13 +2,18 @@ class StaticController < ApplicationController
   layout "standard"
   
   def index
+    ppath = params[:path]
+    layout = nil
+    if ppath and ppath.kind_of?(Array) and not ppath.empty? and ppath[0] =~ /^s4p/i
+      layout = 's4p'
+    end
     
     if template_exists? path = 'static/' + params[:path].join('/')
-       render_cached path
+       render_cached path, layout
     elsif template_exists? path+'/index.html'
-        render_cached path+'/index.html'
+        render_cached path+'/index.html', layout
     else template_exists? path+'/index.rhtml'
-      render_cached path+'/index.rhtml'
+      render_cached path+'/index.rhtml', layout
     end
   end
   
@@ -22,9 +27,13 @@ class StaticController < ApplicationController
     end
   end
 
-  def render_cached(path)
+  def render_cached(path, layout=nil)
     # if NO_CACHE.include? path
-    render :template => path
+    if layout
+      render :template => path, :layout => layout
+    else 
+      render :template => path
+    end
    #  else
    #     key = path.gsub('/', '-')
    #     unless content = read_fragment(key)

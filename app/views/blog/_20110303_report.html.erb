@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 
-<div class="header">
-<h3>RVIB Nathaniel B. Palmer NBP-1102/S04P Weekly Scientific Report 02</h3>
-<h4 class="date">03 March 2011</h4>
-<h4>from Jim Swift, SIO, Chief Scientist and Alex Orsi, TAMU, Co-Chief Scientist</h4>
+<div id="weekly_report">
+	<div class="progress">
+	<h3>RVIB Nathaniel B. Palmer NBP-1102/S04P Weekly Scientific Report 02</h3>
+	<h4 class="date">03 March 2011</h4>
+	<h4>from Jim Swift, SIO, Chief Scientist and Alex Orsi, TAMU, Co-Chief Scientist</h4>
+	</div>
 </div>
 
-<p class="progress">
-ca. 66.9&deg;S, 175.6&deg;W<br>
+<div class="header">
+<!--ca. 66.9&deg;S, 175.6&deg;W--> (ca. <%= link_to "#{@lat}, #{@lng}", "/progress/index" -%>)<br>
 0200 Z (1500 local; NBP is staying on western Ross Sea time/date for now)<br>
 2 &deg;C (35 &deg;F)<br>
 winds 38 knots from N<br>
 waiting for weather near position of intended station 024<br>
-</p>
+</div>
 
+<div class="entry_body">
 <p class="img-right">
-<%= image_tag 'blog/wave_on_deck_3.jpeg' -%><br>
-<caption>Wave breaking on deck (NBP)</caption>
+<a href="/images/s4p/wave_on_deck_2.jpg" rel="lightbox[s4p]" title="Wave breaking on deck"><img src="/images/s4p/wave_on_deck_2.jpg" width="130" alt="Wave breaking on deck" title="Wave breaking on deck"></a><br>
+<span class="caption">Wave breaking on deck (NBP)</span>
 </p>
 
 <p>We began our work off Cape Adare, a location notorious for high winds.
@@ -27,21 +30,19 @@ a heading and slow speed that will provide a reasonably good ride, and try
 to judge when to head back to the next station just in time for the seas to
 have improved post-storm to the point where we can go back to work. During
 the biggest storm, during a long spell of sustained winds over 50 knots, a
-storage van on the fantail was partly caved in by a wave.</p>
+<a name="cargo_van" href="#damaged_cargo">storage van</a> on the fantail was partly caved in by a wave.</p>
 
 <p class="img-left">
-<%= image_tag 'blog/4_crabeater_seals.jpeg' -%><br>
-<caption>Crabeater seals (Swift)</caption>
+<a href="/images/s4p/4_crabeater_seals.jpg" rel="lightbox[s4p]" title="Crabeater seals"><img src="/images/s4p/4_crabeater_seals.jpg" width="130" alt="Crabeater seals" title="Crabeater seals"></a><br>
+<span class="caption">Crabeater seals (Swift)</span>
 </p>
 
 <p>At one point while we were waiting out a storm near an intended station
 location, we entered a field of rotten first-year sea ice leftover from the
 summer melt. We quickly prepared the rosette, knowing that in the ice the
 large seas would be damped down, and, indeed, we got a station done despite
-the weather. Meanwhile we passed by some crabeater and leopard seals hauled
+the weather. Meanwhile we passed by some crabeater and <a name="leopard" href="#leopard_seals">leopard seals</a> hauled
 out onto the ice, making a nice photo op.</p>
-
-<div style="clear:both;"></div>
 
 <p>It's not all been storms, of course. The team is working diligently and
 every measurement program is going well. Water sample data are being
@@ -52,7 +53,7 @@ salinity along our transect of stations NE from Cape Adare. The cold, salty
 Ross Sea Bottom Water dense outflow so prominent in 1992 on the west end of
 the S04P section is now gone, and the Circumpolar Deep Water offshore is
 warmer and saltier than it was 19 years ago. We've included a
-<a href="/public/etc/S04P_report_02_02Mar2011_figure.pdf">figure and
+<a href="/reports/weekly_reports/S04P_report_02_02Mar2011_figure.pdf">figure and
 Alex's scientific caption</a> to whet the appetites of the PIs ashore.</p>
 
 <p>The food is great (some of us already fear we may be getting great
@@ -67,14 +68,15 @@ after all - but we are a happy bunch.</p>
 <p>Jim and Alex</p>
 
 <p>
-<table style="margin-left:auto;margin-right:auto;">
+<table class="entry_table">
   <tr>
-    <td><%= image_tag 'blog/wave_damaged_cargo_van.jpeg' -%></td>
-    <td><%= image_tag 'blog/leopard_seal_2.jpeg' -%><br></td>
+    <td><a href="/images/s4p/wave_damaged_cargo_van.jpg" rel="lightbox[s4p]" title="Cargo van damaged by waves"><img src="/images/s4p/wave_damaged_cargo_van.jpg" width="130" alt="Cargo van damaged by waves" title="Cargo van damaged by waves"></a></td>
+    <td><a href="/images/s4p/leopard_seal_2.jpg" rel="lightbox[s4p]" title="Leopard seal"><img src="/images/s4p/leopard_seal_2.jpg" width="130" alt="Leopard seal" title="Leopard seal"></a><br></td>
   </tr>
   <tr>
-    <td><span class="caption">Cargo van damaged by waves (Swift)</span></td>
-    <td><span class="caption">Leopard seal (Swift)</span></td>
+    <td><span class="caption"><a name="damaged_cargo"></a>Cargo van damaged by waves (Swift)</span><br><a href="#cargo_van">Back to paragraph</a></td>
+    <td><span class="caption"><a name="leopard_seals"></a>Leopard seal (Swift)</span><br><a href="#leopard">Back to paragraph</a></td>
   </tr>
 </table>
 </p>
+</div>

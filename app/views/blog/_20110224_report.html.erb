@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<style type="text/css">img{height:auto;margin-left:0}</style>
 
-<div class="header">
-<h3>RVIB Nathaniel B. Palmer NBP-1102/S04P Weekly Scientific Report 01</h3>
-<h4 class="date">24 February 2011</h4>
-<h4>from Jim Swift, SIO, Chief Scientist, and Alex Orsi, TAMU, Co-Chief Scientist</h4>
+<div id="weekly_report">
+	<div class="progress">
+		<h3>RVIB Nathaniel B. Palmer NBP-1102/S04P Weekly Scientific Report 01</h3>
+		<h4 class="date">24 February 2011</h4>
+		<h4>from Jim Swift, SIO, Chief Scientist, and Alex Orsi, TAMU, Co-Chief Scientist</h4>
+	</div>
 </div>
 
-<p class="progress">
-69.7&deg;S, 169.9&deg;E<br>
+<div class="header">
+	
+(<%= link_to "#{@lat}, #{@lng}", "/progress/index" -%>)<br>
 24 February 2011<br>
 0200 Z (1500 local)<br>
 -0.9 &deg;C (30 &deg;F)<br>
 winds 6 knots from NE<br>
 on station 009<br>
-</p>
+</div>
 
+<div class="entry_body">
 <p>Our cruise for the NSF and NOAA-sponsored US Global Ocean Carbon and Repeat
 Hydrography Program will cross the far-south Pacific sector of the
 Antarctic region on the US Antarctic Program (USAP) icebreaking research
@@ -61,10 +64,13 @@ personnel efficiently providing assistance. Because the ship was refueled
 upon its arrival, cargo loading and lab set-ups were delayed, making it
 necessary to delay the ship's departure one day from the plan.</p>
 
-<%= image_tag 'blog/NBP_and_McMurdo.jpg' -%>
-<caption>RVIB Nathaniel B. Palmer at the
+<a href="/images/s4p/NBP_and_McMurdo.jpg" rel="lightbox[s4p]" title="RVIB Nathaniel B. Palmer at the
+McMurdo"><img src="/images/s4p/NBP_and_McMurdo.jpg" width="730" alt="RVIB Nathaniel B. Palmer at the
+McMurdo" title="RVIB Nathaniel B. Palmer at the
+McMurdo"></a><br>
+<span class="caption">RVIB Nathaniel B. Palmer at the
 McMurdo ice pier, with the Scott "Discovery Hut" in the foreground and much
-of the McMurdo base in the background. (Swift)</caption>
+of the McMurdo base in the background. (Swift)</span>
 
 <p>RVIB Nathaniel B. Palmer departed McMurdo Base at noon local time on 20
 February 2011 in good weather, into McMurdo region waters nearly free of
@@ -98,3 +104,4 @@ have heard that the people we worked with on board are safe, though many
 were separated from their belongings, passports, and so forth, and face
 many difficulties along with those endured by the residents of that lovely
 small city. Our thoughts are truly with them.</p>
+</div>

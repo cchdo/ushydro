@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 
-<p class="progress">
-Thursday, 24 February 2011<br>
-69.7&deg;S, 169.9&deg;E<br>
--2 &deg;C / 28 &deg;F<br>
-wind 12 knots from E<br>
-on station 010<br>
-</p>
+<div id="weekly_report">
+	<div class="progress">
+	<h1>Thursday, 24 February 2011</h1>
+	<em>(<%= link_to "#{@lat}, #{@lng}", "/progress/index" -%>)</em><br>
+	-2 &deg;C / 28 &deg;F<br>
+	wind 12 knots from E<br>
+	on station 010
+	</div>
+</div>
 
+<div class="entry_body">
 <p>Dear Family, Friends, and Colleagues,</p>
 
 <p class="img-right">
-<%= image_tag 'blog/scenery_as_we_left_McMurdo_2.jpeg' -%><br>
-<caption>Scenery during departure (Swift)</caption>
+<a href="/images/s4p/scenery_as_we_left_McMurdo_2.jpg" rel="lightbox[s4p]" title="Scenery during departure"><img src="/images/s4p/scenery_as_we_left_McMurdo_2.jpg" width="130" alt="Scenery during departure" title="Scenery during departure"></a><br>
+<span class="caption">Scenery during departure (Swift)</span>
 </p>
 
 <p>RVIB Nathaniel B. Palmer departed McMurdo Base Sunday noon, one day later
@@ -20,8 +23,8 @@ than originally planned.  (Instead of handling the cargo when the ship came
 in, it was fueled first - normally we can set-up the labs during fueling
 but of course our gear was not yet on board.) The area near McMurdo was
 unusually free of sea ice. I saw a couple of penguins waving goodbye to us
-(photo attached) and we enjoyed the bleak yet spectacular Antarctic scenery
-(example photos attached). There were a few whale tails or fins sighted
+(<a name="bye_penguins" href="#waving_penguins">photo attached</a>) and we enjoyed the bleak yet spectacular Antarctic scenery
+(example photos attached - <em>See right and <a name="scenery" href="#mt_erebus">below</a></em>). There were a few whale tails or fins sighted
 from time to time, but nothing dramatic.</p>
 
 <p>As first I was busy non-stop, although in another sense I do very little,
@@ -97,14 +100,15 @@ NBP-1102 / S04P<br>
 </p>
 
 <p>
-<table style="margin-left:auto;margin-right:auto;">
+<table class="entry_table">
   <tr>
-    <td><%= image_tag 'blog/penguins_as_ship_departed.jpeg' -%></td>
-    <td><%= image_tag 'blog/MtErebus(unsure)_as_we_headed_north_2.jpeg' -%></td>
+    <td><a href="/images/s4p/penguins_as_ship_departed.jpg" rel="lightbox[s4p]" title="Penguins during departure"><img src="/images/s4p/penguins_as_ship_departed.jpg" width="130" alt="Penguins during departure" title="Penguins during departure"></a></td>
+    <td><a href="/images/s4p/MtErebus_as_we_headed_north_2.jpg" rel="lightbox[s4p]" title="Mt. Erebus"><img src="/images/s4p/MtErebus_as_we_headed_north_2.jpg" width="130" alt="Mt. Erebus" title="Mt. Erebus"></a></td>
   </tr>
   <tr>
-    <td><span class="caption">Penguins during departure (Swift)</span></td>
-    <td><span class="caption">Mt. Erebus (Swift)</span></td>
+    <td><span class="caption">Penguins during departure (Swift)</span><br><a name="waving_penguins" href="#bye_penguins">Back to paragraph</a></td>
+    <td><span class="caption">Mt. Erebus (Swift)</span><br><a name="mt_erebus" href="#scenery">Back to paragraph</a></td>
   </tr>
 </table>
 </p>
+</div>
