@@ -14,7 +14,7 @@ google.setOnLoadCallback(function () {
           var track = data.map(function (pos) {
             return new gm.LatLng(pos.position.latitude, pos.position.longitude);
           });
-          var polyline = new gm.Polyline(track, '#00ff00', 3, 1);
+          var polyline = new gm.Polyline(track, '#ADD8E6', 3, 1);
           bounds = polyline.getBounds();
           map.addOverlay(polyline);
           map.setCenter(bounds.getCenter(), map.getBoundsZoomLevel(bounds));
@@ -30,9 +30,9 @@ google.setOnLoadCallback(function () {
             var pos = new gm.LatLng(post.latitude, post.longitude);
             var placemark = new gm.Marker(pos, {title: post.post_date});
 
-            placemark.desc = post.excerpt + '<a href="/blog/' +
+            placemark.desc = post.excerpt + '<span class="newer"><a href="/blog/' +
                 post.post_type + '/' +
-                post.post_date + '">Read more &#155;</a>';
+                post.post_date + '">Read more</a></span>';
             gm.Event.addListener(placemark, 'click', function () {
               this.openInfoWindowHtml(this.desc, {maxWidth: 400});
             });
