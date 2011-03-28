@@ -1,4 +1,5 @@
 class ProgressController < ApplicationController
+  layout 's4p'
   def index
   end
 

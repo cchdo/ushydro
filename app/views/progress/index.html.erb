@@ -1,9 +1,23 @@
 <% content_for :title do -%>Progress<% end -%>
 
-<div id="map" style="width:800px;height:600px;"></div>
+<div class="outreach_main_content">
+	<div id="outreach_page_title" style="margin-top: 20px;">S4P: Weekly Reports from Sea Blog - Map View</div>
 
-<% jsapi_modules = CGI.escape('{"modules":[{"name":"maps","version":"2"}]}') -%>
-<script type="text/javascript" src="https://www.google.com/jsapi?autoload=<%=jsapi_modules-%>"></script>
-<script type="text/javascript">google.load('jquery','1.4.2');</script>
+	<div class="nav" style="margin-top: 20px;">
+	  <span class="homelevel">
+	    <%= link_to 'Blog view', '/blog/index' -%>
+	</div>
 
-<%= javascript_include_tag "progress" %>
+	<div id="map" style="width:800px;height:600px;"></div>
+
+	<% jsapi_modules = CGI.escape('{"modules":[{"name":"maps","version":"2"}]}') -%>
+	<script type="text/javascript" src="https://www.google.com/jsapi?autoload=<%=jsapi_modules-%>"></script>
+	<script type="text/javascript">google.load('jquery','1.4.2');</script>
+
+	<%= javascript_include_tag "progress" %>
+	
+	<div class="nav" style="margin-top: 20px;">
+	  <span class="homelevel">
+	    <%= link_to 'Blog view', '/blog/index' -%>
+	</div>
+</div>
