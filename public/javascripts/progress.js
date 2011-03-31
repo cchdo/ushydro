@@ -19,7 +19,7 @@ google.setOnLoadCallback(function () {
     // Set the map to Terrain type. Use setUIToDefault() to obtain Terrain
     // type, which isn't normally in the default map types.
     map.setUIToDefault();
-    map.setMapType(G_PHYSICAL_MAP);
+    map.setMapType(G_SATELLITE_MAP/*G_PHYSICAL_MAP*/);
 
     // Request the cruise positions and construct the track that shows the
     // ship's progress.
@@ -62,10 +62,15 @@ google.setOnLoadCallback(function () {
             var icon;
 
             // Different marker colors for different correspondence types.
-            // No blue, boo-hoo.
-            // http://chart.apis.google.com/chart?
-            //     chst=d_map_pin_letter&chld=%E2%80%A2|9999FF|000000
-            if(post.post_type === 'letter') { icon = G_DEFAULT_ICON; }
+            // Give a different (anchor) icon for McMurdo posts.
+            if(post.post_date === '2011-02-19' ||
+                post.post_date === '2011-02-17') {
+              icon = new gm.Icon(G_DEFAULT_ICON,
+                  'http://maps.google.com/mapfiles/kml/shapes/marina.png');
+              icon.iconSize = new gm.Size(32, 32);
+              icon.shadow = null;
+            }
+            else if(post.post_type === 'letter') { icon = G_DEFAULT_ICON; }
             else { icon = new gm.Icon(G_DEFAULT_ICON,
                 'http://www.google.com/mapfiles/marker_green.png'
                 /*'../images/marker_blue.png'*/); }
@@ -77,9 +82,14 @@ google.setOnLoadCallback(function () {
             // Give the marker its excerpt description, which will be
             // displayed in the info window when the user clicks on the
             // placemark.
-            placemark.desc = post.excerpt + '<span class="newer"><a href="/blog/' +
+            placemark.desc = '<div><p>' + post.post_date + ' ' +
+                (post.post_type === 'letter' ?
+                    'Letter from Jim Swift' :
+                    'Cruise report by Buzz Scott') + '<br>' +
+                post.latitude + ', ' + post.longitude + '</p>' +
+                post.excerpt + '<span class="newer"><a href="/blog/' +
                 post.post_type + '/' +
-                post.post_date + '">Read more</a></span>';
+                post.post_date + '">Read more</a></span></div>';
 
             // Add a listener that opens an info window with a placemark's
             // description (set above) when it is clicked.
