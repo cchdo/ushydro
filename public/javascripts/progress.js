@@ -67,7 +67,8 @@ google.setOnLoadCallback(function () {
             //     chst=d_map_pin_letter&chld=%E2%80%A2|9999FF|000000
             if(post.post_type === 'letter') { icon = G_DEFAULT_ICON; }
             else { icon = new gm.Icon(G_DEFAULT_ICON,
-                'http://www.google.com/mapfiles/marker_green.png'); }
+                'http://www.google.com/mapfiles/marker_green.png'
+                /*'../images/marker_blue.png'*/); }
 
             // Build the gm.Marker with the colored icon. Tooltip is the
             // date of the correspondence, %Y-%m-%d.
