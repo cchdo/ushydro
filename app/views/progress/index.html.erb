@@ -3,9 +3,15 @@
 <div class="outreach_main_content">
 	<div id="outreach_page_title" style="margin-top: 20px;">S4P: Weekly Reports from Sea Blog - Map View</div>
 
-	<div class="nav" style="margin-top: 20px;">
-	  <span class="homelevel">
+<div class="progress_legend">
+	<img src="/images/s4p/NBP_blog_letter.png" alt="Letter icon" title="Letter icon"> = Letter<br>
+	<img src="/images/s4p/NBP_blog_report.png" alt="Report icon" title="Report icon"> = Report
+</div>  
+
+	<div class="nav" style="margin-top: 20px; margin-left: 122px;">
+	<span class="homelevel">
 	    <%= link_to 'Blog view', '/blog/index' -%>
+	  </span>
 	</div>
 
 	<div id="map" style="width:800px;height:600px;"></div>
@@ -16,8 +22,9 @@
 
 	<%= javascript_include_tag "progress" %>
 	
-	<div class="nav" style="margin-top: 20px;">
+	<div class="nav">
 	  <span class="homelevel">
 	    <%= link_to 'Blog view', '/blog/index' -%>
+	 </span>
 	</div>
 </div>

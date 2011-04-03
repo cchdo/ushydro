@@ -300,3 +300,25 @@ p.img-right img, p.img-left img {
 	color: #369;
 	font-style:italic;
 }
+#map p {
+	font-size: 11pt;
+    height: auto;
+    line-height: 130%;
+    text-align: justify;
+    width: auto;
+}
+
+.progress_legend {
+	float: right;
+	clear: both;
+	top: -40px;
+	width: 122px;
+	position: relative;
+}
+
+.progress_legend img {
+    border: none;
+    float: none;
+    margin: 0;
+    vertical-align: middle;
+}
