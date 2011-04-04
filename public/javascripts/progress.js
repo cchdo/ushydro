@@ -16,10 +16,20 @@ google.setOnLoadCallback(function () {
     var track;
     var bounds;
 
+    var icon_letter = new gm.Icon(G_DEFAULT_ICON, '../images/s4p/NBP_blog_letter.png');
+    icon_letter.shadow = '';
+	icon_letter.transparent = '../images/s4p/NBP_blog_letter_transparency.png';
+    icon_letter.iconSize = new gm.Size(50, 31);
+    icon_letter.iconAnchor = new gm.Point(25, 15);
+    icon_letter.imageMap = [1,16,9,6,17,2,21,0,31,6,34,10,60,15,58,39,21,35,16,34,4,35,2,30,1,16];
+    var icon_report = new gm.Icon(icon_letter, '../images/s4p/NBP_blog_report.png');
+	icon_report.transparent = '../images/s4p/NBP_blog_report_transparency.png';
+	icon_report.imageMap = [0,14,17,14,18,4,35,2,28,2,42,2,43,8,47,7,51,20,49,30,1,30,0,17];
+
     // Set the map to Terrain type. Use setUIToDefault() to obtain Terrain
     // type, which isn't normally in the default map types.
     map.setUIToDefault();
-    map.setMapType(G_SATELLITE_MAP/*G_PHYSICAL_MAP*/);
+    map.setMapType(G_PHYSICAL_MAP);
 
     // Request the cruise positions and construct the track that shows the
     // ship's progress.
@@ -46,67 +56,67 @@ google.setOnLoadCallback(function () {
           // Add the track to the map and set its initial viewport.
           map.addOverlay(track);
           map.setCenter(bounds.getCenter(), map.getBoundsZoomLevel(bounds));
-        }
-    });
 
-    // Request correspondence and plot it on the map.
-    jQuery.ajax({
-        type: 'GET',
-        url: '/progress/posts',
-        datatype: 'json',
-        success: function (data) {
-          // Construct a gm.Marker for each email.
-          data.map(function (postContainer) {
-            var post = postContainer.post;
-            var pos = new gm.LatLng(post.latitude, post.longitude);
-            var icon;
+          // Request correspondence and plot it on the map.
+          jQuery.ajax({
+              type: 'GET',
+              url: '/progress/posts',
+              datatype: 'json',
+              success: function (data) {
+                // Construct a gm.Marker for each email.
+                data.map(function (postContainer) {
+                  var post = postContainer.post;
+                  var pos = new gm.LatLng(post.latitude, post.longitude);
+              	  var icon;
+              		
+                  // Different marker colors for different correspondence types.
+                  // No blue, boo-hoo.
+                  // http://chart.apis.google.com/chart?
+                  //     chst=d_map_pin_letter&chld=%E2%80%A2|9999FF|000000
 
-            // Different marker colors for different correspondence types.
-            // Give a different (anchor) icon for McMurdo posts.
-            if(post.post_date === '2011-02-19' ||
-                post.post_date === '2011-02-17') {
-              icon = new gm.Icon(G_DEFAULT_ICON,
-                  'http://maps.google.com/mapfiles/kml/shapes/marina.png');
-              icon.iconSize = new gm.Size(32, 32);
-              icon.shadow = null;
-            }
-            else if(post.post_type === 'letter') { icon = G_DEFAULT_ICON; }
-            else { icon = new gm.Icon(G_DEFAULT_ICON,
-                'http://www.google.com/mapfiles/marker_green.png'
-                /*'../images/marker_blue.png'*/); }
+/*
+              		if(post.post_type === 'letter') { icon = G_DEFAULT_ICON; }
+                  else { icon = new gm.Icon(G_DEFAULT_ICON,
+                      'http://www.google.com/mapfiles/marker_green.png'
+                      //'../images/marker_blue.png'
+); }      
+*/
 
-            // Build the gm.Marker with the colored icon. Tooltip is the
-            // date of the correspondence, %Y-%m-%d.
-            var placemark = new gm.Marker(pos, {icon: icon, title: post.post_date});
+                  if (post.post_type === 'letter') {
+                    icon = icon_letter;
+                  } else {
+                    icon = icon_report;
+                  }
 
-            // Give the marker its excerpt description, which will be
-            // displayed in the info window when the user clicks on the
-            // placemark.
-            placemark.desc = '<div><p>' + post.post_date + ' ' +
-                (post.post_type === 'letter' ?
-                    'Letter from Jim Swift' :
-                    'Cruise report by Buzz Scott') + '<br>' +
-                post.latitude + ', ' + post.longitude + '</p>' +
-                post.excerpt + '<span class="newer"><a href="/blog/' +
-                post.post_type + '/' +
-                post.post_date + '">Read more</a></span></div>';
+                  // Build the gm.Marker with the colored icon. Tooltip is the
+                  // date of the correspondence, %Y-%m-%d.
+                  var placemark = new gm.Marker(pos, {icon: icon, title: post.post_date});
 
-            // Add a listener that opens an info window with a placemark's
-            // description (set above) when it is clicked.
-            gm.Event.addListener(placemark, 'click', function () {
-              this.openInfoWindowHtml(this.desc, {maxWidth: 400});
-            });
+                  // Give the marker its excerpt description, which will be
+                  // displayed in the info window when the user clicks on the
+                  // placemark.
+                  placemark.desc = post.excerpt + '<span class="newer"><a href="/blog/' +
+                      post.post_type + '/' +
+                      post.post_date + '">Read more</a></span>';
 
-            // Add the placemark to the map.
-            map.addOverlay(placemark);
+                  // Add a listener that opens an info window with a placemark's
+                  // description (set above) when it is clicked.
+                  gm.Event.addListener(placemark, 'click', function () {
+                    this.openInfoWindowHtml(this.desc, {maxWidth: 400});
+                  });
 
-            // Make sure the placemark is visible by extending the original
-            // viewing bounds to include it.
-            bounds.extend(pos);
+                  // Add the placemark to the map.
+                  map.addOverlay(placemark);
+
+                  // Make sure the placemark is visible by extending the original
+                  // viewing bounds to include it.
+                  bounds.extend(pos);
+                });
+
+                // Refresh the viewport so that everything is visible.
+                map.setCenter(bounds.getCenter(), map.getBoundsZoomLevel(bounds));
+              }
           });
-
-          // Refresh the viewport so that everything is visible.
-          map.setCenter(bounds.getCenter(), map.getBoundsZoomLevel(bounds));
         }
     });
 
