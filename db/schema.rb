@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110404201435) do
+ActiveRecord::Schema.define(:version => 20110407164024) do
 
   create_table "contacts", :force => true do |t|
     t.string   "first_name"
@@ -100,6 +100,14 @@ ActiveRecord::Schema.define(:version => 20110404201435) do
     t.date    "policy_letter"
     t.text    "notes"
     t.integer "preliminary"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_salt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

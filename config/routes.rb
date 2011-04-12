@@ -30,6 +30,12 @@ ActionController::Routing::Routes.draw do |map|
   #     admin.resources :products
   #   end
 
+ # Auth::Application.routes.draw do
+ #   get "sign_up" => "users#new", :as => "sign_up"
+ #   root :to => "users#new"
+ #   resources :users
+ # end
+
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "home"
 

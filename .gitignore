@@ -1,8 +1,3 @@
-.DS_Store
-*.swp
-*.swo
-*.log
-*.pid
-tmp/**/*
-doc
-db/*.sqlite3
+.rvmrc
+.idea
+log/*

@@ -1058,3 +1058,11 @@ table.biostats tr td {
 }
 
 
+
+/*errors*/
+
+.formError {color: red;}
+.message {padding: 10px; margin: 10px 0; background-color: #ccffcc; border: solid 1px #6C6;}
+.notice {padding: 10px; margin: 10px 0; background-color: #ccffcc; border: solid 1px #6C6;}
+.warning {padding: 10px; margin: 10px 0; background-color: #ffcccc; border: solid 1px #FE7569;}
+.error {padding: 10px; margin: 10px 0; background-color: #ff9999; border: solid 1px #C66;}
