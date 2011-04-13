@@ -1,0 +1,9 @@
+<div id="user_nav">
+  <% if current_user = User.first(session[:user_id]) %>
+    Logged in as <%= current_user.email %>
+    <%= link_to "Log out", '/sessions/destroy' %>
+  <% else %>
+    <%= link_to "Sign up", '/sessions/new' %> or
+    <%= link_to "Log in", '/users/new' %>
+  <% end %>
+</div>

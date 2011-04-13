@@ -116,6 +116,9 @@
 
 	<div class="content">
       <%= flash_messages %>
+        <% if params[:controller] =~ /staff/ %>
+          <%= render :partial => 'layouts/staff_header' %>
+        <% end %>
 		<%= yield %>
 		<%controller = params[:controller]
 			outreachpages = %w[life_at_sea learn_more_about outreach day_in_life interactive_features photo_gallery video_vault static outreach_experiences outreach_instruments outreach_measurements outreach_posters outreach_technology outreach_data outreach_ships]

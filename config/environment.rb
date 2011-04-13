@@ -10,7 +10,6 @@
 # Bootstrap the Rails environment, frameworks, and default configuration
 require 'thread'
 require File.join(File.dirname(__FILE__), 'boot')
-
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers

@@ -1,0 +1,8 @@
+<% form_for(@event,:url =>{:controller => 'staff/events',:action => 'create'}) do |f| %>
+    <ul style="vertical-align:top;list-style:none">
+    <li><label>Type</label> <%= f.text_field :type %></li>
+    <li><label>Date</label> <%= f.date_select :date %></li>
+    <li ><label style="vertical-align:top;">Notes</label> <%= f.text_area :notes %></li>
+    <li > <%= f.submit %></li>
+    </ul>
+<% end %>
