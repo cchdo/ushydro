@@ -20,7 +20,7 @@ google.setOnLoadCallback(function () {
     icon_letter.shadow = '';
 	icon_letter.transparent = '../images/s4p/NBP_blog_letter_transparency.png';
     icon_letter.iconSize = new gm.Size(50, 31);
-    icon_letter.iconAnchor = new gm.Point(25, 15);
+    icon_letter.iconAnchor = new gm.Point(25, 31);
     icon_letter.imageMap = [1,16,9,6,17,2,21,0,31,6,34,10,60,15,58,39,21,35,16,34,4,35,2,30,1,16];
     var icon_report = new gm.Icon(icon_letter, '../images/s4p/NBP_blog_report.png');
 	icon_report.transparent = '../images/s4p/NBP_blog_report_transparency.png';
