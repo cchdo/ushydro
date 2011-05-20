@@ -25,11 +25,12 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # Sample resource route within a namespace:
-  #   map.namespace :admin do |admin|
-  #     # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
-  #     admin.resources :products
-  #   end
-
+     map.namespace :staff do |staff|
+       # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
+       staff.resources :events
+       staff.resources :cruises_parameters
+     end
+     map.connect 'staff', :controller => 'staff/events', :action => 'index'
  # Auth::Application.routes.draw do
  #   get "sign_up" => "users#new", :as => "sign_up"
  #   root :to => "users#new"
@@ -54,10 +55,11 @@ ActionController::Routing::Routes.draw do |map|
   # map.connect ':virtual_cruise', :controller => 'static', :action => 'rerout'
   # Mapping for static controller
   map.connect '*path', :controller => 'static'
+  #map.connect 'staff', :controller => 'staff/events'
   #Auth::Application.routes.draw do
    #map.connect "log_in" => "sessions#new", :as => "log_in"
    #map.connect "log_out" => "sessions#destroy", :as => "log_out"
-   map.resources :events
+   #map.resources :events
    #map.connect "sign_up" => "users#new", :as => "sign_up"
    #root :to => "users#new"
    #resources :users
