@@ -1,0 +1,8 @@
+<li>
+  <div class="event_list_item">
+    <h2><%= event.cruises_parameter.cruise_id ? Cruise.find(event.cruises_parameter.cruise_id).name : 'No Associated Cruise' %></h2>
+    <h3><%= event.category %></h2>
+    <pre><%= event.notes %></pre>
+  </div>
+
+</li>
