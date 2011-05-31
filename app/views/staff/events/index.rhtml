@@ -1,1 +1,8 @@
+<div style="clear:both;"></div>
 <h1>Events</h1>
+<ul style="list-style:none;">
+<% @events.each do |e| %>
+    <%= render 'event', :event => e %>
+<% end %>
+</ul>
+<div style="float:left;"><a href="<%= new_staff_event_path %>">New</a> </div>
