@@ -1,8 +1,13 @@
 .DS_Store
-*.swp
-*.swo
 *.log
 *.pid
 tmp/**/*
 doc
 db/*.sqlite3
+# Prevent adding virtual_cruise (videos) to repository
+public/virtual_cruise*
+# Prevent recursing the project inside itself. Has happened!
+ushydro
+# Editors
+*.swp
+*.swo
