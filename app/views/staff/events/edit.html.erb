@@ -1,8 +1,4 @@
-<% form_for(@cruise_param,:url =>{:controller => 'staff/cruise_parameters',:action => 'create'}) do |f| %>
-    <ul style="vertical-align:top;list-style:none">
-    <li><label>Cruise</label> <%= f.text_field :cruise %></li>
-    <li><label>Date</label> <%= f.text_field :event %></li>
-    <li ><label style="vertical-align:top;">Notes</label> <%= f.text_area :notes %></li>
-    <li > <%= f.submit %></li>
-    </ul>
+<div style="clear:both;"></div>
+<% form_for(@event,:url =>{:controller => 'staff/events',:action => 'update'}) do |f| %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
 <% end %>

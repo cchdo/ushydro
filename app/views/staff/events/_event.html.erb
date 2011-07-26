@@ -5,7 +5,7 @@
     </h2>
     <h3><%= event.category %>  <%= event.date.strftime("%m/%d/%Y") %></h3>
     <pre><%= event.notes %></pre>
-
+    <%= link_to "Edit" , "/staff/events/#{event.id}/edit" %>
   </div>
 
 </li>

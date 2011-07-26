@@ -1,11 +1,4 @@
 <div style="clear:both;"></div>
   <% form_for(@event,:url =>{:controller => 'staff/events',:action => 'create'}) do |f| %>
-    <ul style="vertical-align:top;list-style:none;">
-      <li><%= select 'event_form', 'cruise', Cruise.all.collect{|c| [c.name, c.id]}  %></li>
-      <li><%= select 'event_form', 'parameter', Parameter.all.collect{|c| [c.name, c.id]}  %></li>
-    <li><label>Type</label> <%= f.select :category,Event::CATEGORIES %></li>
-    <li><label>Date</label> <%= f.date_select :date %></li>
-    <li ><label style="vertical-align:top;">Notes</label> <%= f.text_area :notes %></li>
-    <li > <%= f.submit %></li>
-    </ul>
+    <%= render :partial => 'form', :locals => {:f => f }%>
 <% end %>

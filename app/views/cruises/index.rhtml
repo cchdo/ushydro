@@ -58,7 +58,14 @@
 
         <% for cruise in @cruises %>
         <tr>
-        	<td><%= cruise.start_date %> - <%= cruise.end_date %></td><td><% if cruise.expocode %><%= link_to("#{cruise.name}", "http://cchdo.ucsd.edu/data_access/show_cruise?ExpoCode=#{cruise.expocode}") %><% else %> <%= cruise.name %><% end %> </td><td><%= cruise.days %></td><td> <%= cruise.start_port.name %>Start port to end port</td><td>PI </td><td><%= cruise.ship.name %>
+        <td><%= cruise.start_date %> - <%= cruise.end_date %></td>
+      <td><% if cruise.expocode %><%= link_to("#{cruise.name}", "http://cchdo.ucsd.edu/data_access/show_cruise?ExpoCode=#{cruise.expocode}") %>
+        <% else %> 
+        <%= cruise.name %>
+      <% end %> </td>
+    <td><%= cruise.days %></td>
+    <td> <%#= cruise.start_port.name %>Start port to end port</td>
+    <td>PI </td><td><%= cruise.ship.name %>
 	<% end %>
   	<!-- <tr>
 	  <td>06/19/03-07/10/03</td>

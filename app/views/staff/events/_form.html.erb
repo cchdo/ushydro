@@ -1,0 +1,21 @@
+<ul style="vertical-align:top;list-style:none;">
+  <% if f.object.cruises_parameter %>
+    <% @cruise_id = f.object.cruises_parameter.cruise_id %>
+  <% else %>
+    <% @cruise_id = "" %>
+ <% end %>
+  <% if f.object.cruises_parameter %>
+    <% @param_id = f.object.cruises_parameter.parameter_id %>
+  <% else %>
+    <% @param_id = "" %>
+ <% end %>
+      <li><%= select 'event_form', 'cruise', options_for_select(Cruise.all.collect{|c| [c.name, c.id]},@cruise_id) %> </li>
+      <li><%= select 'event_form', 'parameter', options_for_select(Parameter.all.collect{|c| [c.name, c.id]}, @param_id) %>  </li>
+      <li><label>Type</label> <%= f.select :category,Event::CATEGORIES %> </li>
+      <li><label>Date</label> <%= f.date_select :date %>  </li>
+      <li ><label style="vertical-align:top;">Notes</label> <%= f.text_area :notes %> </li>
+    <li > <%= f.submit %> </li>
+    <% unless request.url =~ /new/ %>
+    <li> <%= link_to "Delete", "/staff/events/destroy/#{f.object.id}" %>
+    <% end %>
+    </ul>

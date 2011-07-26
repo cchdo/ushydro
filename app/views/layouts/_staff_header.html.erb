@@ -3,9 +3,6 @@
     <li style="float:left;">
       <%= link_to "Events", staff_events_path %>
     </li>
-    <li style="float:left; padding-left:10px;">
-      <%= link_to 'Cruise Parameters', staff_cruises_parameters_path %>
-    </li>
     <li style="float:left;padding-left:10px;">
       <% if current_user = User.first(session[:user_id]) %>
           Logged in as <%= current_user.email %>
