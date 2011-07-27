@@ -1,6 +1,10 @@
 <div style="clear:both;"></div>
 <h1>Events</h1>
 <ul style="list-style:none;">
+  <li> Sort by <%= link_to "Cruise", '/staff/events?sort=cruises_parameter_id' %>  
+      <%= link_to "Date", '/staff/events?sort=date' %> 
+      <%= link_to "Parameter", '/staff/events?sort=cruises_parameter_id' %>
+  </li>
 <% @events.each do |e| %>
     <%= render 'event', :event => e %>
 <% end %>

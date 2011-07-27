@@ -16,6 +16,7 @@
       <li ><label style="vertical-align:top;">Notes</label> <%= f.text_area :notes %> </li>
     <li > <%= f.submit %> </li>
     <% unless request.url =~ /new/ %>
-    <li> <%= link_to "Delete", "/staff/events/destroy/#{f.object.id}" %>
+      <li> <%= link_to "Delete", "/staff/events/destroy/#{f.object.id}" %>&nbsp;&nbsp;&nbsp;<%= link_to "Cancel", "/staff/events/" %></li>
     <% end %>
     </ul>
+
