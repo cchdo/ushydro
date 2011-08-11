@@ -1,3 +1,4 @@
 .rvmrc
 .idea
 log/*
+.DS_Store
