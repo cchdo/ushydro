@@ -3,6 +3,8 @@ class Staff::EventsController < ApplicationController
   before_filter :logged_in?
   layout  "standard"
   def index
+    @cruises = Cruise.find(:all, :order=> "start_date")
+    @parameters = Parameter.find(:all, :conditions =>['level = 1'])
     if params[:sort]# and ['cruise_id','date','parameter_id'].include?(params[:sort])
       @events = Event.all(:order => ["#{params[:sort]} DESC"])
     else
