@@ -12,5 +12,4 @@ module ApplicationHelper
     flash_html
   end
 
-
 end

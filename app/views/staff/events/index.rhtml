@@ -1,6 +1,6 @@
 <div style="clear:both;"></div>
 <h1>Events</h1>
-<ul style="list-style:none;">
+<!-- <ul style="list-style:none;">
   <li> Sort by <%= link_to "Cruise", '/staff/events?sort=cruises_parameter_id' %>  
     <%= link_to "Date", '/staff/events?sort=date' %> 
     <%= link_to "Parameter", '/staff/events?sort=cruises_parameter_id' %>
@@ -8,7 +8,7 @@
   <% @events.each do |e| %>
     <%= render 'event', :event => e %>
   <% end %>
-</ul>
+</ul> -->
 <div style="float:left;"><a href="<%= new_staff_event_path %>">New</a> </div>
 
 <div style="margin:0 auto;width:98%;overflow-x:scroll; overflow-y:hidden;">
@@ -18,40 +18,62 @@
           Parameter events
       </th></tr>		
       <tr>
-        <th scope="col">Year</th>
         <th scope="col">Cruise</th>
-        <th scope="col">Ship or lead</th>
-
-        <%@parameters.each do |param|%>
-          <th scope="col"><%=param.name%></th>
-        <%end%>
-
+        <th scope="col">PI</th>
+        <th scope="col">Parameter</th>
+        <th scope="col">PI Letter Sent</th>
+        <th scope="col">Prelim Data Submitted</th>
+        <th scope="col">Update Needed</th>
+        <th scope="col">Action Needed</th>
+        <th scope="col">Merge Status</th>
       </tr>
     </thead>
     <tbody>
       <% @cruises.each do |c| %>
+        <% @parameters.each do |param| -%>
         <tr>
-          <td><%= c.start_date.year %></td>
           <td><%= c.name %></td>
-          <td><%= c.ship.name %></td>
-          <% @parameters.each do |p| %>
-            <td>
-              <%#<%= p.name %>
-              <%#<% if contacts = get_contacts(c.id,p.id) %>
-                <%#<% contacts.each do |con| %>
-                  <%#<%= con.last_name %>
-                  <%#<% end %>
-                <%#<% end %>
-
-              <% if cp = CruisesParameter.find(:first,:conditions => ["parameter_id = #{p.id} AND cruise_id = #{c.id}"]) -%>
-                <% if cp.id %>
-                <% events = Event.find(:all, :conditions =>["cruises_parameter_id = #{cp.id}"]) -%>
-                <%= events.length %>
-                <% end -%>
-                <% end -%>
+          <td>
+            <% cpid =  CruisesParameter.find(:first, :conditions => ([' cruise_id = ? and parameter_id = ?', c.id, param.id])).id %>
+            <% ccps = ContactsCruisesParameter.find(:all, :conditions => (['cruises_parameters_id = ?', cpid])) %>    
+            <% if ccps %> 
+                <% ccps.each do |ccp| %>
+                  <% con = Contact.find(ccp.contact_id) %>
+                  <%= con.last_name %>
+                <% end %>
+            <% end %>
             </td>
-          <% end %>
-        </tr>
+            <% if cp = CruisesParameter.find(:first,:conditions => ["parameter_id = #{param.id} AND cruise_id = #{c.id}"]) -%>
+                <% if cp.id %>
+                 <td><%= param.name %>
+                  <% events = Event.find(:all, :conditions =>["cruises_parameter_id = #{cp.id}"]) -%>
+                  <%= events.length %>
+                </td>
+                <td> 
+                  <% letter_status = 0 %> 
+                  <% date = "" %>
+                  <% events.each do |e| %>
+                    <% if e.category =~ /PI letter/%>
+                      <% letter_status = 1 %>
+                      <% date = e.date %>
+                    <% end %>
+                  <% end %>
+                  <% if letter_status == 1 %>
+                    <%= date.strftime("%m/%d/%Y") %>
+                  <% end %>
+                </td>
+              <% else -%>
+                <td><%= param.name %></td>
+                <td></td>
+              <% end -%>
+              <% end -%>
+            <td>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        <% end %>
       <% end %>
     </tbody>	
   </table>

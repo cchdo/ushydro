@@ -1,5 +1,7 @@
 class Staff::CruiseParametersController < ApplicationController
+
   layout "standard"
+
    def show
   end
 
