@@ -35,7 +35,7 @@
           <td><%= c.name %></td>
           <td>
             <% cpid =  CruisesParameter.find(:first, :conditions => ([' cruise_id = ? and parameter_id = ?', c.id, param.id])).id %>
-            <% ccps = ContactsCruisesParameter.find(:all, :conditions => (['cruises_parameters_id = ?', cpid])) %>    
+            <% ccps = ContactsCruisesParameter.find(:all, :conditions => (['cruises_parameter_id = ?', cpid])) %>    
             <% if ccps %> 
                 <% ccps.each do |ccp| %>
                   <% con = Contact.find(ccp.contact_id) %>
