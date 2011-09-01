@@ -13,6 +13,7 @@
       <li><%= select 'event_form', 'parameter', options_for_select(Parameter.all.collect{|c| [c.name, c.id]}, @param_id) %>  </li>
       <li><label>Type</label> <%= f.select :category,Event::CATEGORIES %> </li>
       <li><label>Date</label> <%= f.date_select :date %>  </li>
+      <li><label>Brief Note</label> <%= f.text_field :brief %>  </li>
       <li ><label style="vertical-align:top;">Notes</label> <%= f.text_area :notes %> </li>
     <li > <%= f.submit %> </li>
     <% unless request.url =~ /new/ %>

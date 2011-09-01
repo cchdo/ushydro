@@ -4,7 +4,11 @@ class Staff::EventsController < ApplicationController
   layout  "standard"
   def index
     @cruises = Cruise.find(:all, :order=> "start_date")
-    @parameters = Parameter.find(:all, :conditions =>['level = 1'])
+    if params[:level]
+      @parameters = Parameter.find(:all, :conditions =>["level = ?", params[:level]])
+    else
+      @parameters = Parameter.find(:all, :conditions =>['level = 1'])
+    end
     if params[:sort]# and ['cruise_id','date','parameter_id'].include?(params[:sort])
       @events = Event.all(:order => ["#{params[:sort]} DESC"])
     else
@@ -52,10 +56,13 @@ class Staff::EventsController < ApplicationController
 
   def create
     if params[:event]
+      puts "\n\nPARAMS{}{}\n"
+      puts "#{params[:event]}\n"
       cruise = Cruise.find(params[:event_form][:cruise])
       parameter = Parameter.find(params[:event_form][:parameter])
       @new_event = Event.new(params[:event])
       puts "I expect these not to be 1:  #{cruise.id},  #{parameter.id} \n\n"*2
+      puts "NEWe 1:  #{@new_event.inspect}\n\n"*2
       logger.info "I expect these not to be 1:  #{cruise.id},  #{parameter.id} \n\n"*2
       if c_p = CruisesParameter.find_or_create_by_parameter_id_and_cruise_id(parameter.id,cruise.id)
         @new_event.cruises_parameter = c_p

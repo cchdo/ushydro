@@ -10,7 +10,12 @@
   <% end %>
 </ul> -->
 <div style="float:left;"><a href="<%= new_staff_event_path %>">New</a> </div>
-
+</br>
+<span>
+  <%= link_to "Level 1", '/staff/events?level=1'%>
+  <%= link_to "Level 2", '/staff/events?level=2'%>
+  <%= link_to "Level 3", '/staff/events?level=3'%>
+</span>
 <div style="margin:0 auto;width:98%;overflow-x:scroll; overflow-y:hidden;">
   <table id="box-table-a" summary="Cruises table">
     <thead>
@@ -32,8 +37,8 @@
       <% @cruises.each do |c| %>
         <% @parameters.each do |param| -%>
         <tr>
-          <td><%= c.name %></td>
-          <td>
+          <td><%= c.name %></td><!-- Cruise -->
+          <td> <!-- PI -->
             <% cpid =  CruisesParameter.find(:first, :conditions => ([' cruise_id = ? and parameter_id = ?', c.id, param.id])).id %>
             <% ccps = ContactsCruisesParameter.find(:all, :conditions => (['cruises_parameter_id = ?', cpid])) %>    
             <% if ccps %> 
@@ -45,11 +50,12 @@
             </td>
             <% if cp = CruisesParameter.find(:first,:conditions => ["parameter_id = #{param.id} AND cruise_id = #{c.id}"]) -%>
                 <% if cp.id %>
-                 <td><%= param.name %>
+                  <td><%= param.name %> <!-- Parameter   -->
                   <% events = Event.find(:all, :conditions =>["cruises_parameter_id = #{cp.id}"]) -%>
                   <%= events.length %>
                 </td>
-                <td> 
+                <td> <!-- PI Letter Sent -->
+                  <%# Refactor %>
                   <% letter_status = 0 %> 
                   <% date = "" %>
                   <% events.each do |e| %>
@@ -63,15 +69,71 @@
                   <% end %>
                 </td>
               <% else -%>
-                <td><%= param.name %></td>
+                <td><%= param.name %></td><!-- Prelim data submitted -->
                 <td></td>
               <% end -%>
               <% end -%>
+              <td> <!-- Prelim data submitted -->
+                  <%# Refactor %>
+                  <% letter_status = 0 %> 
+                  <% date = "" %>
+                  <% events.each do |e| %>
+                    <% if e.category =~ /preliminary/%>
+                      <% letter_status = 1 %>
+                      <% date = e.date %>
+                    <% end %>
+                  <% end %>
+                  <% if letter_status == 1 %>
+                    <%= date.strftime("%m/%d/%Y") %>
+                  <% end %>
+            </td> <!-- Update Needed -->
             <td>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
+                  <%# Refactor %>
+                  <% letter_status = 0 %> 
+                  <% date = "" %>
+                  <% events.each do |e| %>
+                    <% if e.category =~ /update/%>
+                      <% letter_status = 1 %>
+                      <% date = e.date %>
+                    <% end %>
+                  <% end %>
+                  <% if letter_status == 1 %>
+                    <%= date.strftime("%m/%d/%Y") %>
+                  <% end %>
+            </td> <!-- Action Needed -->
+            <td>
+                  <%# Refactor %>
+                  <% letter_status = 0 %> 
+                  <% date = "" %>
+                  <% events.each do |e| %>
+                    <% if e.category =~ /action/%>
+                      <% letter_status = 1 %>
+                      <% date = e.date %>
+                    <% end %>
+                  <% end %>
+                  <% if letter_status == 1 %>
+                    <%= date.strftime("%m/%d/%Y") %>
+                  <% end %>
+            </td> <!-- Merge Status -->
+            <td>
+                  <%# Refactor %>
+                  <% letter_status = 0 %> 
+                  <% date = "" %>
+                  <% brief = "" %>
+                  <% events.each do |e| %>
+                    <% if e.category =~ /status/%>
+                      <% letter_status = 1 %>
+                      <% date = e.date %>
+                      <% brief = e.brief %>
+                    <% end %>
+                  <% end %>
+                  <% if letter_status == 1 %>
+                    <%= date.strftime("%m/%d/%Y") %>
+                  <% end %>
+                  <span class="brief_note"> 
+                    <%= brief %>
+                  </span>
+            </td> <!-- Merge Status -->
           </tr>
         <% end %>
       <% end %>

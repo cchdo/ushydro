@@ -9,28 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110531145202) do
+ActiveRecord::Schema.define(:version => 20110901155604) do
 
   create_table "contacts", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "title"
-    t.integer  "institution", :limit => 11
+    t.integer  "institution"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "contacts_cruises_parameters", :id => false, :force => true do |t|
-    t.integer "contact_id",            :limit => 11
-    t.integer "cruises_parameters_id", :limit => 11
+    t.integer "contact_id"
+    t.integer "cruises_parameters_id"
   end
 
   create_table "cruises", :force => true do |t|
     t.string   "name"
-    t.integer  "days",               :limit => 11
-    t.integer  "stations",           :limit => 11
-    t.integer  "ship_id",            :limit => 11
+    t.integer  "days"
+    t.integer  "stations"
+    t.integer  "ship_id"
     t.string   "expocode"
     t.date     "start_date"
     t.date     "end_date"
@@ -40,24 +40,28 @@ ActiveRecord::Schema.define(:version => 20110531145202) do
     t.string   "underway_meta_link"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "start_port",         :limit => 11
-    t.integer  "end_port",           :limit => 11
+    t.integer  "start_port_id"
+    t.integer  "end_port_id"
   end
 
   create_table "cruises_parameters", :force => true do |t|
-    t.integer  "cruise_id",    :limit => 11
-    t.integer  "parameter_id", :limit => 11
+    t.integer  "cruise_id"
+    t.integer  "parameter_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "cruises_parameters", ["cruise_id"], :name => "cruise_id"
+  add_index "cruises_parameters", ["parameter_id"], :name => "parameter_id"
+
   create_table "events", :force => true do |t|
-    t.integer  "cruises_parameter_id", :limit => 11, :null => false
+    t.integer  "cruises_parameter_id", :null => false
     t.datetime "date"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "category"
+    t.string   "brief"
   end
 
   create_table "institutions", :force => true do |t|
@@ -71,7 +75,7 @@ ActiveRecord::Schema.define(:version => 20110531145202) do
   create_table "parameters", :force => true do |t|
     t.string   "name"
     t.string   "full_name"
-    t.integer  "level",      :limit => 11
+    t.integer  "level"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -90,6 +94,13 @@ ActiveRecord::Schema.define(:version => 20110531145202) do
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "states", :id => false, :force => true do |t|
+    t.integer "cruises_parameters_id", :default => 0, :null => false
+    t.date    "policy_letter"
+    t.text    "notes"
+    t.integer "preliminary"
   end
 
   create_table "users", :force => true do |t|
