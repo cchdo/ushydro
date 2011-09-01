@@ -40,7 +40,7 @@
           <td><%= c.name %></td><!-- Cruise -->
           <td> <!-- PI -->
             <% cpid =  CruisesParameter.find(:first, :conditions => ([' cruise_id = ? and parameter_id = ?', c.id, param.id])).id %>
-            <% ccps = ContactsCruisesParameter.find(:all, :conditions => (['cruises_parameter_id = ?', cpid])) %>    
+            <% ccps = ContactsCruisesParameter.find(:all, :conditions => (['cruises_parameters_id = ?', cpid])) %>    
             <% if ccps %> 
                 <% ccps.each do |ccp| %>
                   <% con = Contact.find(ccp.contact_id) %>
@@ -58,6 +58,7 @@
                   <%# Refactor %>
                   <% letter_status = 0 %> 
                   <% date = "" %>
+                  <% brief = "" %>
                   <% events.each do |e| %>
                     <% if e.category =~ /PI letter/%>
                       <% letter_status = 1 %>
@@ -67,6 +68,10 @@
                   <% if letter_status == 1 %>
                     <%= date.strftime("%m/%d/%Y") %>
                   <% end %>
+                  <br/>
+                  <span class="brief_note"> 
+                    <%= brief %>
+                  </span>
                 </td>
               <% else -%>
                 <td><%= param.name %></td><!-- Prelim data submitted -->
@@ -77,6 +82,7 @@
                   <%# Refactor %>
                   <% letter_status = 0 %> 
                   <% date = "" %>
+                  <% brief = "" %>
                   <% events.each do |e| %>
                     <% if e.category =~ /preliminary/%>
                       <% letter_status = 1 %>
@@ -86,11 +92,16 @@
                   <% if letter_status == 1 %>
                     <%= date.strftime("%m/%d/%Y") %>
                   <% end %>
+                  <br/>
+                  <span class="brief_note"> 
+                    <%= brief %>
+                  </span>
             </td> <!-- Update Needed -->
             <td>
                   <%# Refactor %>
                   <% letter_status = 0 %> 
                   <% date = "" %>
+                  <% brief = "" %>
                   <% events.each do |e| %>
                     <% if e.category =~ /update/%>
                       <% letter_status = 1 %>
@@ -100,11 +111,16 @@
                   <% if letter_status == 1 %>
                     <%= date.strftime("%m/%d/%Y") %>
                   <% end %>
+                  <br/>
+                  <span class="brief_note"> 
+                    <%= brief %>
+                  </span>
             </td> <!-- Action Needed -->
             <td>
                   <%# Refactor %>
                   <% letter_status = 0 %> 
                   <% date = "" %>
+                  <% brief = "" %>
                   <% events.each do |e| %>
                     <% if e.category =~ /action/%>
                       <% letter_status = 1 %>
@@ -114,6 +130,10 @@
                   <% if letter_status == 1 %>
                     <%= date.strftime("%m/%d/%Y") %>
                   <% end %>
+                  <br/>
+                  <span class="brief_note"> 
+                    <%= brief %>
+                  </span>
             </td> <!-- Merge Status -->
             <td>
                   <%# Refactor %>
@@ -130,6 +150,7 @@
                   <% if letter_status == 1 %>
                     <%= date.strftime("%m/%d/%Y") %>
                   <% end %>
+                  <br/>
                   <span class="brief_note"> 
                     <%= brief %>
                   </span>
