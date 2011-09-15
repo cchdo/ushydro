@@ -1,9 +1,15 @@
 <div id="user_nav">
   <ul style="list-style:none; display:inline;">
     <li style="float:left;">
-      <%= link_to "Events", staff_events_path %>
+      &nbsp;<%= link_to "Cruises", staff_events_path %>
     </li>
-    <li style="float:left;padding-left:10px;">
+    <li style="float:left;">
+      &nbsp;<%= link_to "Events", staff_events_path %>
+    </li>
+    <li style="float:left;">
+      &nbsp;<%= link_to "Contacts", staff_events_path %>
+    </li>
+    <li style="float:right;padding-left:10px;">
       <% if current_user = User.first(session[:user_id]) %>
           Logged in as <%= current_user.email %>
           <%= link_to "Log out", '/sessions/destroy' %>

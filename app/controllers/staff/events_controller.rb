@@ -2,6 +2,7 @@ class Staff::EventsController < ApplicationController
 
   before_filter :logged_in?
   layout  "standard"
+
   def index
     @cruises = Cruise.find(:all, :order=> "start_date")
     if params[:level]
@@ -10,10 +11,9 @@ class Staff::EventsController < ApplicationController
       @parameters = Parameter.find(:all, :conditions =>['level = 1'])
     end
     if params[:sort]# and ['cruise_id','date','parameter_id'].include?(params[:sort])
-      @events = Event.all(:order => ["#{params[:sort]} DESC"])
-    else
-      @events = Event.all
+      @sort = params[:sort]
     end
+    @events = Event.all
   end
 
   def new
