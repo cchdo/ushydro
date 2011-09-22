@@ -1,3 +1,7 @@
+<br>
+<br>
+<br>
+<a href="<%= new_staff_cruise_path %>">New Cruise</a>
 <table id="box-table-a" summary="Cruises table">
   <thead>
     <th>Cruise</th>
@@ -13,7 +17,7 @@
           <td><a href="<%= edit_staff_cruise_path(cruise.id) %>">
               <%= cruise.name %> </a> </td>
           <td><%= cruise.expocode %>  </td>
-          <td><%= cruise.ship.name %>  </td>
+          <td> <% if cruise.ship %>  <%= cruise.ship.name %>  <% end %></td>
           <td><% if cruise.start_port and cruise.end_port %> 
              <%= cruise.start_port.name %> -  
               <%= cruise.end_port.name %> <% end %> </td>
