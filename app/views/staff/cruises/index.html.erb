@@ -1,0 +1,28 @@
+<table id="box-table-a" summary="Cruises table">
+  <thead>
+    <th>Cruise</th>
+    <th>Expocode</th>
+    <th>Ship</th>
+    <th>Ports</th>
+    <th>Dates</th>
+  </thead>
+  <tbody>
+    <% if @cruises %>
+      <% @cruises.each do |cruise| %>
+        <tr>
+          <td><a href="<%= edit_staff_cruise_path(cruise.id) %>">
+              <%= cruise.name %> </a> </td>
+          <td><%= cruise.expocode %>  </td>
+          <td><%= cruise.ship.name %>  </td>
+          <td><% if cruise.start_port and cruise.end_port %> 
+             <%= cruise.start_port.name %> -  
+              <%= cruise.end_port.name %> <% end %> </td>
+          <td><%= cruise.start_date %>-  
+             <%= cruise.end_date %>
+           </td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+

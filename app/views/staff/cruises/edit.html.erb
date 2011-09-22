@@ -1,0 +1,4 @@
+<div style="clear:both;"></div>
+<% form_for(@cruise,:url =>{:controller => 'staff/cruises',:action => 'update'}) do |f| %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
+<% end %>

@@ -29,6 +29,7 @@ ActionController::Routing::Routes.draw do |map|
        # Directs /admin/products/* to Admin::ProductsController (app/controllers/admin/products_controller.rb)
        staff.resources :events
        staff.resources :cruises_parameters
+       staff.resources :cruises
      end
      map.connect 'staff', :controller => 'staff/events', :action => 'index'
  # Auth::Application.routes.draw do

@@ -1,0 +1,12 @@
+<table>
+  <tr>
+  <td> <a href="">  <%= @cruise.name %> </a> <td>
+          <td><%= @cruise.expocode %>  </td>
+          <td><%= @cruise.ship.name %>  </td>
+    <td><% if @cruise.start_port and @cruise.end_port %> 
+             <%= @cruise.start_port.name %> -  
+             <%= @cruise.end_port.name %> -  
+           <% end %> 
+     </td>
+   </tr>
+</table>
