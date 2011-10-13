@@ -1,0 +1,11 @@
+<li>
+  <div class="event_list_item">
+    <h2><%= event.cruises_parameter.cruise_id ? Cruise.find(event.cruises_parameter.cruise_id).name : 'No Associated Cruise' %>
+        &nbsp;<%= event.cruises_parameter.parameter_id ? Parameter.find(event.cruises_parameter.parameter_id).name : 'No Associated Parameter'  %>
+    </h2>
+    <h3><%= event.category %>  <%= event.date.strftime("%m/%d/%Y") %></h3>
+    <pre><%= event.notes %></pre>
+    <%= link_to "Edit" , "/staff/events/#{event.id}/edit" %>
+  </div>
+
+</li>
