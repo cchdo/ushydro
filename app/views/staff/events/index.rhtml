@@ -6,7 +6,7 @@
     <%= link_to "Parameter", '/staff/events?sort=cruises_parameter_id' %>
   </li>
   <% @events.each do |e| %>
-    <%= render 'event', :event => e %>
+    <%= render 'staff/events/_event', :event => e %>
   <% end %>
 </ul> -->
 <div style="float:left;"><a href="<%= new_staff_event_path %>">New</a> </div>
