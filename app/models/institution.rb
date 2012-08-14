@@ -1,3 +1,3 @@
 class Institution < ActiveRecord::Base
-  belongs_to_many :contacts
+  belongs_to :contacts
 end

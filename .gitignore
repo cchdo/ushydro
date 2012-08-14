@@ -1,10 +1,11 @@
-.rvmrc
+.ruby-version
 .idea
+config/setup_load_paths.rb
 log/*
 .DS_Store
 *.log
 *.pid
-tmp/**/*
+tmp/*
 doc
 db/*.sqlite3
 # Prevent adding virtual_cruise (videos) to repository

@@ -1,0 +1,2 @@
+module OutreachMeasurementsHelper
+end
