@@ -19,10 +19,10 @@ production:
   encoding: utf8
 development:
   adapter: mysql
-  database: ushydro_development
+  database: dev_ushydro
   username: ushydro_web
   password: ((hd0hydr0d@t@
-  host: goship.ucsd.edu
+  host: ghdc.ucsd.edu
   encoding: utf8
 
 # Warning: The database defined as 'test' will be erased and
@@ -33,5 +33,5 @@ test:
   database: ushydro_test # non-existant!
   username: ushydro_web
   password: ((hd0hydr0d@t@
-  host: goship.ucsd.edu
+  host: ghdc.ucsd.edu
   encoding: utf8

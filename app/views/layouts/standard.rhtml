@@ -9,6 +9,7 @@
   <%= javascript_include_tag 'lightbox' %>	
   <%= stylesheet_link_tag "lightbox" %>	
   <%= stylesheet_link_tag "main" %>
+  <%= yield :css %>
   <% if request.env["HTTP_USER_AGENT"] =~ /MSIE [4-6]/ %>
     <%= stylesheet_link_tag "ie" %>
   <% end %>
@@ -93,17 +94,7 @@
       </li>
     </ul>
     <ul>
-      <li><h1>Links</h1>
-        <ul>
-	    <li><a href="http://cchdo.ucsd.edu/">CCHDO</a></li>
-            <li><a href="http://www.carboncyclescience.gov/">US Carbon Cycle <br />Science Program</a></li>
-            <li><a href="http://www.usclivar.org/">US CLIVAR</a></li>
-            <li><a href="http://www.ioccp.org">IOCCP</a></li>
-            <li><a href="http://www.go-ship.org">GO-SHIP</a></li>
-            <li><a href="http://www.wmo.int/pages/prog/gcos/">GCOS</a></li>
-            <li><a href="/links.htm">Other Links</a></li>
-        </ul>  
-      </li>
+      <li><h1><a href="/links.htm">Links</a></h1></li>
     </ul>
     <ul>
       <li><h1><a href="/contacts.htm">Participation</a></h1>
