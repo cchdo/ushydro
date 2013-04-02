@@ -445,7 +445,7 @@ table {
 	border-top: 4px solid #06629B;
 	color: #06629B;
 	padding: 7px;
-	width: 50px !important;
+	width: 50px;
 }
 
 #box-table-a td {
@@ -587,12 +587,46 @@ maps img {
 	padding-top: 20px;
 }
 
-.cruises-table .datesep {
+.datesep {
   font-size: 0.2em;
   color: #BBBBEE;
   padding: 0.4em;
 }
 
+.date {
+  white-space: nowrap;
+}
+
+#box-table-a.cruise-data-links td.date {
+  max-width: none;
+}
+#box-table-a.cruise-data-links th {
+  width: auto;
+}
+#box-table-a.cruise-data-links th .title {
+  display: block;
+  margin-bottom: 0.3em;
+}
+#box-table-a.cruise-data-links th .description {
+  font-weight: normal;
+  font-size: 0.8em;
+}
+#box-table-a.cruise-data-links .expocode {
+  width: 8em;
+}
+
+h1.table-header {
+  font-size: 0.8em;
+	background: #ADD8E6;
+	border-bottom: 1px solid #FFFFFF;
+	border-top: 4px solid #06629B;
+	color: #06629B;
+	padding: 0.3em;
+  margin: 20px 0.2em 0 0.2em;
+  width: 98.85%;
+  /**/
+  margin-bottom: -20px;
+}
 
 /*==================OUTREACH STYLEZZZZzzzzz===============*/
 /*-----------OUTREACH_introduction_page------------*/
