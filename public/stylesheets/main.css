@@ -587,6 +587,12 @@ maps img {
 	padding-top: 20px;
 }
 
+.cruises-table .datesep {
+  font-size: 0.2em;
+  color: #BBBBEE;
+  padding: 0.4em;
+}
+
 
 /*==================OUTREACH STYLEZZZZzzzzz===============*/
 /*-----------OUTREACH_introduction_page------------*/
