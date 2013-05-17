@@ -1,0 +1,32 @@
+Cruise
+======
+ * year
+ * WOCE line
+   * leg {1, 2}
+ * days
+ * stations
+ * ship
+ * lead agency
+
+Collector
+=========
+Cruise, parameter -> People, leg {1, 2}
+Cruise, parameter -> institution, leg {1, 2}
+Cruise, parameter -> NULL (nc)
+
+Parameter
+=========
+ * funded
+ * limited collection on present cruises
+ * proposed limited sample collection on past and present cruises
+
+Institution
+===========
+* name
+* abbreviation
+
+Contact
+=======
+ * name
+ * abbreviation
+
