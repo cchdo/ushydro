@@ -318,7 +318,7 @@ ol {
 
 #menu ul li:hover h1, #menu ul li.over h1 {
 /*	background-color: #B0C4DE; */
-	color: #4682B4;
+	color: #4682B4;
 /*	border-bottom: 1px solid #4682B4;*/
 }
 #menu ul li:hover ul, #menu ul li.over ul {
@@ -382,9 +382,12 @@ ol {
 #menu ul li ul li ul li:hover, #menu ul li ul li ul li.over {
 	background-color: #ffffff;
 }
-#text {           /* the Mac's standard Safari browser will not see this code */
-	height:1.215em;#           /* ...  but every other browser will and should */
-} /* Safari barfs on the illegal pound sign (#) after the rule's property val */
+/* DONT USE HACKS */
+/*
+#text {           // the Mac's standard Safari browser will not see this code
+	height:1.215em; // ...  but every other browser will and should
+}
+Safari barfs on the illegal pound sign (#) after the rule's property val */
 
 /*--------------Main page side bar------------------*/
 #contact_info {
@@ -429,16 +432,19 @@ table {
 	/*max-width: 50em;*/
 }
 
+.cruises-table tr:hover td, 
 #box-table-a tr:hover td{
 	background: #D0DAFD !important;
 	color: #333399 !important;
 }
 
+.cruises-table td:hover,
 #box-table-a td:hover {
 	background: #D0DAFD !important;
 	color: #333399 !important;
 }
 
+.cruises-table th,
 #box-table-a th {
 	background: #ADD8E6 none repeat scroll 0 0;
 	border-bottom: 1px solid #FFFFFF;
@@ -448,6 +454,7 @@ table {
 	width: 50px;
 }
 
+.cruises-table td,
 #box-table-a td {
 	background: #F0F8FF none repeat scroll 0 0;
 	border-bottom: 1px solid #FFFFFF;
@@ -516,8 +523,9 @@ td {
 	padding: 7px;
 }
 
+.cruises-table, 
 #box-table-a {
-	border collapse: collapse;
+	border-collapse: collapse;
 }
 
 /*----------- Maps Table (on cruises page) ------------*/
@@ -557,7 +565,7 @@ td {
 }
 
 #box-table-leviii {
-	border collapse: collapse;
+	border-collapse: collapse;
 }
 
 /*-----Cruises page----*/
@@ -597,20 +605,25 @@ maps img {
   white-space: nowrap;
 }
 
+.cruises-table.cruise-data-links td.date,
 #box-table-a.cruise-data-links td.date {
   max-width: none;
 }
+.cruises-table.cruise-data-links th,
 #box-table-a.cruise-data-links th {
   width: auto;
 }
+.cruises-table.cruise-data-links th .title,
 #box-table-a.cruise-data-links th .title {
   display: block;
   margin-bottom: 0.3em;
 }
+.cruises-table.cruise-data-links th .description,
 #box-table-a.cruise-data-links th .description {
   font-weight: normal;
   font-size: 0.8em;
 }
+.cruises-table.cruise-data-links .expocode,
 #box-table-a.cruise-data-links .expocode {
   width: 8em;
 }
@@ -622,10 +635,8 @@ h1.table-header {
 	border-top: 4px solid #06629B;
 	color: #06629B;
 	padding: 0.3em;
-  margin: 20px 0.2em 0 0.2em;
-  width: 98.85%;
-  /**/
-  margin-bottom: -20px;
+  margin: 20px 0 -0.1em 0;
+  width: 99.3%;
 }
 
 /*==================OUTREACH STYLEZZZZzzzzz===============*/
@@ -733,10 +744,6 @@ float:left;
 	border-bottom: 0.5px dotted #a9a9a9;
 	margin-bottom: 1em;
 	width: 94%;
-}
-
-.outreach_main_content h1 {
-	background-color: ;
 }
 .outreach_column_container {
 	width: 800px;
