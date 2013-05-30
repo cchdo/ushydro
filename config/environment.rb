@@ -48,8 +48,8 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_ushydro_session',
-    :secret      => '0c2aee8bbe8ece567b0d10e4ea0db97d7e4f929a9744120ff7616af22cb66059d72d2397b42dde1ecfe4116612d49b84d93139ce8708a77c48157f4ce0b77e27'
+    :key => '_ushydro_session',
+    :secret => '0c2aee8bbe8ece567b0d10e4ea0db97d7e4f929a9744120ff7616af22cb66059d72d2397b42dde1ecfe4116612d49b84d93139ce8708a77c48157f4ce0b77e27'
   }
 
   # Use the database for sessions instead of the cookie-based default,
