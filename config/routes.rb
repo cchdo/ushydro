@@ -42,9 +42,12 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "home"
 
   map.repeathydro_map "/repeathydro_map.html", :controller => "pages", :action => "repeathydro_map"
-  map.cruise "/cruises", :controller => "pages", :action => "cruises"
-  map.match "/cruises.htm", :controller => "pages", :action => "cruises"
-  map.match "/cruises.html", :controller => "pages", :action => "cruises"
+  map.cruise "/cruises.html", :controller => "pages", :action => "cruises"
+  map.match "/cruises.htm", :controller => "legacy", :action => "cruises"
+  map.match "/cruises", :controller => "legacy", :action => "cruises"
+  map.match "/cruise_data_links", :controller => "legacy", :action => "cruise_data_links"
+  map.match "/cruise_data_links.htm", :controller => "legacy", :action => "cruise_data_links"
+  map.match "/cruise_data_links.html", :controller => "legacy", :action => "cruise_data_links"
 
   # See how all your routes lay out with "rake routes"
   map.blog 'blog/:post_type/:post_date', :controller => 'blog', :action => 'show'

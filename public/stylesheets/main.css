@@ -1,4 +1,3 @@
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 body { line-height: 1; padding-bottom: 1em; }
 ol, ul { list-style: none; }
@@ -251,22 +250,17 @@ ol {
 }	
 	
 #page_title {
-	position: relative;
 	margin: 5px auto;
-	text-align: left;
-	border-bottom: 28px solid #add8e6;
-	width: 98%;
-	font-size: 140%;
+	font-size: 1.4em;
 	text-transform: uppercase;
 	font-weight: bold;
-	color:#06629B ;
+	color: #06629B ;
 }	
 
 #header_title {
-	position: relative;
-	margin: -29px auto 5px;
-	text-align:left;
-	width: 97%;
+	background: #add8e6;
+  padding: 0.5em 0.2em;
+  margin: 0.2em 0;
 	color: #06629B;
 	font-weight: bold;
 }
@@ -599,7 +593,6 @@ maps img {
 	position: relative;
 	margin: 5px auto;
 	width: 89%;
-	padding-top: 20px;
 }
 
 .datesep {
@@ -630,9 +623,48 @@ maps img {
   font-weight: normal;
   font-size: 0.8em;
 }
-.cruises-table.cruise-data-links .expocode,
+
+.cruises-table td {
+  padding: 7px 0.7em;
+  min-width: 0;
+  max-width: none;
+}
+.cruises-table .name,
+.cruises-table .expocode,
+.cruises-table .dates,
+.cruises-table .ship,
+.cruises-table .days,
+.cruises-table .stations,
+.cruises-table .doc-results {
+  min-width: 0;
+  max-width: none;
+  width: auto;
+}
+.cruises-table .name {
+  width: 12em;
+}
+.cruises-table .expocode,
 #box-table-a.cruise-data-links .expocode {
-  width: 8em;
+  width: 6em;
+}
+.cruises-table .dates {
+  width: 7em;
+}
+.cruises-table .dates .date {
+  white-space: nowrap;
+}
+.cruises-table .ports {
+  width: 15em;
+}
+.cruises-table .ship {
+  width: 4em;
+}
+.cruises-table .days,
+.cruises-table .stations {
+  width: 2em;
+}
+.cruises-table .doc-results {
+  width: 3em;
 }
 
 h1.table-header {
@@ -643,7 +675,13 @@ h1.table-header {
 	color: #06629B;
 	padding: 0.3em;
   margin: 20px 0 -0.1em 0;
-  width: 99.3%;
+  width: 99.4%;
+}
+h2.table-header {
+  margin-bottom: 0;
+  padding: 0.3em;
+  background: #ADD8E6;
+  border-top: 4px solid #06629B;
 }
 
 /*==================OUTREACH STYLEZZZZzzzzz===============*/

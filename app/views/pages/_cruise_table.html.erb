@@ -1,0 +1,42 @@
+<table id="cruises" class="cruises-table" summary="Cruises table">
+  <thead>
+    <tr>
+      <th scope="col" class="name">Cruise</th>
+      <th scope="col" class="dates">Dates</th>
+      <th scope="col" class="expocode">CCHDO ExpoCode<p class='smaller'>Cruise report, Station map, CTD and Bottle data</p></th>
+      <th scope="col" class="ship">Ship</th>
+      <th scope="col" class="days">Days</th>
+      <th scope="col" class="stations">Stations</th>
+      <th scope="col" class="ports">Ports</th>
+      <th scope="col" class="contacts">Contact/Chief Scientist<p class="smaller">(overall coordinator: Jim Swift, SIO)</p></th>
+      <% if not future -%>
+        <th scope="col" class="doc-results">Underway Navigation, Bathymetry, Seawater, pCO2 data</th>
+        <th scope="col" class="doc-results">Underway ADCP data</th>
+        <th scope="col" class="doc-results">Lowered ADCP data</th>
+        <th scope="col" class="doc-results">Underway Met. data</th>
+      <% end -%>
+    </tr>
+  </thead>
+  <tbody>
+  <% for cruise in cruises -%>
+    <% if not cruises_hidden?(cruise) -%>
+      <tr id="<%= cruise.name.parameterize %>">
+        <td class="name"><%= cruises_link(cruise) %></td>
+        <td class="dates"><%= cruises_dates(cruise) %></td>
+        <td class="expocode"><%= cruises_link(cruise, cruise.expocode) %></td>
+        <td class="ship"><%= cruises_ship(cruise) %></td>
+        <td class="days"><%= cruises_days(cruise) %></td>
+        <td class="stations"><%= cruise.stations %></td>
+        <td class="ports"><%= cruises_port(cruise) %></td>
+        <td class="contacts"><%= cruise.contact %></td>
+        <% if not future -%>
+        <td class="doc-results"><%= cruises_underway_nav_link(cruise) %></td>
+        <td class="doc-results"><%= cruises_underway_adcp_link(cruise) %></td>
+        <td class="doc-results"><%= cruises_lowered_adcp_link(cruise) %></td>
+        <td class="doc-results"><%= cruises_underway_meta_link(cruise) %></td>
+        <% end -%>
+      </tr>
+    <% end -%>
+  <% end -%>
+  </tbody>
+</table>

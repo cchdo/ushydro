@@ -8,12 +8,14 @@ module PagesHelper
         return false
     end
 
-    def cruises_link(cruise)
+    def cruises_link(cruise, name=nil)
+        if name.nil?
+            name = cruise.name
+        end
         if cruise.expocode
-            link_to(
-                cruise.name, "http://cchdo.ucsd.edu/cruise/#{cruise.expocode}")
+            link_to(name, "http://cchdo.ucsd.edu/cruise/#{cruise.expocode}")
         else
-            cruise.name
+            name
         end
     end
 
@@ -29,6 +31,17 @@ module PagesHelper
         end
     end
 
+    # If both dates are available, use them to calculate the days instead of
+    # taking it from the table which may be dated.
+    def cruises_days(cruise)
+        if (not cruises_needs_reduction?(cruise) and cruise.start_date and
+            cruise.end_date)
+            cruise.end_date - cruise.start_date
+        else
+            cruise.days
+        end
+    end
+
     def cruises_port(cruise)
         ports = []
         if cruise.start_port
@@ -40,12 +53,25 @@ module PagesHelper
         ports.join(' - ')
     end
 
+    # Display the ship name as a link to the ship's webpage. If no webpage is
+    # available, just show the ship name. The ship name should be shortened to
+    # one word with the full name available on hover.
     def cruises_ship(cruise)
         if cruise.ship
+            name = cruise.ship.name
+            short_name = name.split()[-1]
             if cruise.ship.link
-                link_to(cruise.ship.name, cruise.ship.link)
+                if short_name != name
+                    link_to(short_name, cruise.ship.link, :title => name)
+                else
+                    link_to(name, cruise.ship.link)
+                end
             else
-                cruise.ship.name
+                if short_name != name
+                    content_tag(:abbr, short_name, :title => name)
+                else
+                    name
+                end
             end
         else
             ''
@@ -102,9 +128,66 @@ module PagesHelper
             end
             "#{general_part} #{cruise.start_date.year}"
         else
-            cruise.start_date.to_s + \
+            content_tag(
+                :span, cruise.start_date.to_s, :class => "date start") + \
             content_tag(:span, '/', :class => "datesep") + \
-            cruise.end_date.to_s
+            content_tag(:span, cruise.end_date.to_s, :class => "date end") 
+        end
+    end
+
+    def link(aaa)
+        aaa =~ /<a href="(.*)">/
+        $1
+    end
+
+    def underway_nav_link_summary(link)
+        if link =~ /www.aoml.noaa.gov/
+            summary = 'NOAA / AOML'
+        elsif link =~ /cdiac.ornl.gov/
+            summary = 'CDIAC'
+        else
+            summary = ''
+        end
+        link_to(summary, link)
+    end
+
+    def cruises_underway_nav_link(cruise)
+        lll = cruise.underway_nav_link
+        if lll =~ /^http/
+            links = lll.split(',')
+            links = links.map {|link| underway_nav_link_summary(link) }
+            links.join(' ')
+        elsif lll
+            lll
+        else
+            ''
+        end
+    end
+
+    def cruises_underway_adcp_link(cruise)
+        lll = cruise.underway_adcp_link
+        if lll
+            link_to('UH', lll, :title => "University of Hawaii")
+        else
+            ''
+        end
+    end
+
+    def cruises_lowered_adcp_link(cruise)
+        lll = cruise.lowered_adcp_link
+        if lll
+            link_to('UH', lll, :title => "University of Hawaii")
+        else
+            ''
+        end
+    end
+
+    def cruises_underway_meta_link(cruise)
+        lll = cruise.underway_meta_link
+        if lll
+            link_to('FSU', lll, :title => "FSU Met. DAC")
+        else
+            ''
         end
     end
 

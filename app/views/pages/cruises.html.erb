@@ -1,4 +1,4 @@
-<div id="page_title"> Cruise Maps &amp; Schedule</div>
+<div id="page_title">Cruise Maps &amp; Schedule</div>
 <div id="header_title">Cruise maps</div>
 
 <table id="maps_table">
@@ -8,55 +8,20 @@
   </tr>
 </table>
 
-<div id="bar_break"></div>
 <div id="header_title">Links to more information on cruises</div>
 
 <ul id="maps_list">
   <li><a href="core_measurements.html">Description and tables of U.S. measurements and U.S. measurement groups</a></li>
-  <li><a href="cruise_data_links.html">Data sets from completed U.S. cruises</a></td></li>
-  <li><a href="shipschedules.html">Ship scheduling sites </a></li>
+  <li><a href="shipschedules.html">Ship scheduling sites</a></li>
   <li><a href="http://cdiac.esd.ornl.gov/oceans/RepeatSections/repeat_map.html">CDIAC: map of completed international sections and data links</a></li>
   <li><a href="http://ioc3.unesco.org/ioccp/Hydrography/New_GlobalMap.html">International Ocean Carbon Coordination Project: map of planned international sections and data links</a></li>
   <li><a href="http://www.clivar.org/carbon_hydro">CLIVAR/CO2 website with map and data links</a></li>
 </ul>
 
-<div id="bar_break"></div>
-<div id="header_title">Table of U.S. cruises</div>
-
-<p>
-<span class='smaller'>(for documentation and results see the 
-<a href="cruise_data_links" style="color: #635299">Data Links</a> page or
-click on cruise name for data files at CCHDO)</span>
-</p>
-
-<div id="dotted_bar"></div>
-
-<%#-----------------------------------CRUISE TABLE-----------------------------------------%>
-
-<h1 class="table-header">Schedule of US CO2/CLIVAR Hydrography Lines <span class='smaller'>(as of 12/13/12)</span></h1>
-<table id="cruises" class="cruises-table" summary="Cruises table">
-  <thead>
-    <tr>
-      <th scope="col">Dates</th>
-      <th scope="col">Cruise<p class='smaller'>(for documentation and results see the <a href="cruise_data_links" style="color: #635299">Data Links</a> page)</p></th>
-      <th scope="col">Days</th>
-      <th scope="col">Ports</th>
-      <th scope="col">Contact/Chief Scientist<p class="smaller">(overall coordinator: Jim Swift, SIO)</p></th>
-      <th scope="col">Ship</th>
-    </tr>
-  </thead>
-  <tbody>
-  <% for cruise in @cruises -%>
-    <% if not cruises_hidden?(cruise) -%>
-      <tr id="<%= cruise.name.parameterize %>">
-        <td><%= cruises_dates(cruise) %></td>
-        <td><%= cruises_link(cruise) %></td>
-        <td><%= cruise.days %></td>
-        <td><%= cruises_port(cruise) %></td>
-        <td><%= cruise.contact %></td>
-        <td><%= cruises_ship(cruise) %></td>
-      </tr>
-    <% end -%>
-  <% end -%>
-  </tbody>
-</table>
+<div class="cruise-schedule">
+  <div id="header_title">Schedule and Data links of US CO2/CLIVAR Hydrography Lines <span class='smaller'>(as of 12/13/12)</span></div>
+  <h1 id="future-cruises" class="table-header">Future cruises</h1>
+  <%= render :partial => "cruise_table", :locals => {:cruises => @future_cruises, :future => true} %>
+  <h1 id="completed-cruises" class="table-header">Completed cruises</h1>
+  <%= render :partial => "cruise_table", :locals => {:cruises => @cruises, :future => false} %>
+</div>
