@@ -9,7 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110901155604) do
+ActiveRecord::Schema.define(:version => 20130530231859) do
+
+  create_table "collectors", :force => true do |t|
+    t.integer  "cruise_id"
+    t.integer  "parameter_id"
+    t.integer  "leg"
+    t.integer  "person_id"
+    t.integer  "institution_id"
+    t.boolean  "not_collected",  :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "contacts", :force => true do |t|
     t.string   "first_name"
@@ -23,7 +34,7 @@ ActiveRecord::Schema.define(:version => 20110901155604) do
 
   create_table "contacts_cruises_parameters", :id => false, :force => true do |t|
     t.integer "contact_id"
-    t.integer "cruises_parameters_id"
+    t.integer "cruises_parameter_id"
   end
 
   create_table "cruises", :force => true do |t|
@@ -42,6 +53,9 @@ ActiveRecord::Schema.define(:version => 20110901155604) do
     t.datetime "updated_at"
     t.integer  "start_port_id"
     t.integer  "end_port_id"
+    t.string   "start_port_type",    :limit => 11, :default => "Port", :null => false
+    t.string   "end_port_type",      :limit => 11, :default => "Port", :null => false
+    t.string   "contact"
   end
 
   create_table "cruises_parameters", :force => true do |t|
@@ -61,7 +75,7 @@ ActiveRecord::Schema.define(:version => 20110901155604) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "category"
-    t.string   "brief"
+    t.text     "brief",                :null => false
   end
 
   create_table "institutions", :force => true do |t|
@@ -87,6 +101,21 @@ ActiveRecord::Schema.define(:version => 20110901155604) do
     t.float    "lon"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "positions", :id => false, :force => true do |t|
+    t.decimal "latitude",  :precision => 8, :scale => 4
+    t.decimal "longitude", :precision => 8, :scale => 4
+  end
+
+  create_table "posts", :id => false, :force => true do |t|
+    t.date     "post_date"
+    t.string   "post_type",   :limit => 16
+    t.decimal  "latitude",                  :precision => 8, :scale => 4
+    t.decimal  "longitude",                 :precision => 8, :scale => 4
+    t.string   "post"
+    t.text     "excerpt"
+    t.datetime "received_dt"
   end
 
   create_table "ships", :force => true do |t|

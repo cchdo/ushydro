@@ -432,6 +432,13 @@ table {
 	/*max-width: 50em;*/
 }
 
+.cruises-table th p {
+  color: inherit;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1em;
+}
+
 .cruises-table tr:hover td, 
 #box-table-a tr:hover td{
 	background: #D0DAFD !important;
