@@ -433,6 +433,12 @@ table {
   line-height: 1em;
 }
 
+.cruises-table .sortarrow {
+  margin-left: 0.2em;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
 .cruises-table tr:hover td, 
 #box-table-a tr:hover td{
 	background: #D0DAFD !important;

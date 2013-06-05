@@ -1,5 +1,29 @@
 module PagesHelper
 
+    def cruises_header_sort(text, key, anchor=nil)
+        if params[:sort] == key and params[:sort_dir] == 'ASC'
+            sort_dir = 'DESC'
+        else
+            sort_dir = 'ASC'
+        end
+
+        newparams = params.merge(
+            :sort => key, :sort_dir => sort_dir, :anchor => anchor)
+
+        if params[:sort] == key
+            if sort_dir == 'DESC'
+                arrow = '&#8595;'
+                title = 'sort descending'
+            else
+                arrow = '&#8593;'
+                title = 'sort ascending'
+            end
+            text + link_to(arrow, newparams, :class => 'sortarrow', :title => title)
+        else
+            text + link_to('&#8597;', newparams, :class => 'sortarrow', :title => 'sort by column')
+        end
+    end
+
     # A cruise is hidden if its start date year is 9999
     def cruises_hidden?(cruise)
         if cruise.start_date and cruise.start_date.year == 9999

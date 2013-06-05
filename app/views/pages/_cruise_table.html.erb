@@ -1,14 +1,22 @@
-<table id="cruises" class="cruises-table" summary="Cruises table">
+<% 
+if future
+  tableid = 'cruises-future'
+else
+  tableid = 'cruises-completed'
+end 
+-%>
+<table id="<%= tableid %>" class="cruises-table" summary="Cruises table">
   <thead>
     <tr>
-      <th scope="col" class="name">Cruise</th>
-      <th scope="col" class="dates">Dates</th>
-      <th scope="col" class="expocode">CCHDO ExpoCode<p class='smaller'>Cruise report, Station map, CTD and Bottle data</p></th>
-      <th scope="col" class="ship">Ship</th>
-      <th scope="col" class="days">Days</th>
-      <th scope="col" class="stations">Stations</th>
+      <% sort_dir = params[:sort_dir] == 'ASC' ? 'DESC' : 'ASC' %>
+      <th scope="col" class="name"><%= cruises_header_sort('Cruise', 'cruise', tableid) %></th>
+      <th scope="col" class="dates"><%= cruises_header_sort('Dates', 'dates', tableid) %></th>
+      <th scope="col" class="expocode"><%= cruises_header_sort('CCHDO ExpoCode', 'expocode', tableid) %><p class='smaller'>Cruise report, Station map, CTD and Bottle data</p></th>
+      <th scope="col" class="ship"><%= cruises_header_sort('Ship', 'ship', tableid) %></th>
+      <th scope="col" class="days"><%= cruises_header_sort('Days', 'days', tableid) %></th>
+      <th scope="col" class="stations"><%= cruises_header_sort('Stations', 'stations', tableid) %></th>
       <th scope="col" class="ports">Ports</th>
-      <th scope="col" class="contacts">Contact/Chief Scientist<p class="smaller">(overall coordinator: Jim Swift, SIO)</p></th>
+      <th scope="col" class="contacts"><%= cruises_header_sort('Contact/Chief Scientist', 'contact', tableid) %><p class="smaller">(overall coordinator: Jim Swift, SIO)</p></th>
       <% if not future -%>
         <th scope="col" class="doc-results">Underway Navigation, Bathymetry, Seawater, pCO2 data</th>
         <th scope="col" class="doc-results">Underway ADCP data</th>

@@ -18,7 +18,7 @@
   <li><a href="http://www.clivar.org/carbon_hydro">CLIVAR/CO2 website with map and data links</a></li>
 </ul>
 
-<div class="cruise-schedule">
+<div id="cruise-schedule" class="cruise-schedule">
   <div id="header_title">Schedule and Data links of US CO2/CLIVAR Hydrography Lines <span class='smaller'>(as of 12/13/12)</span></div>
   <h1 id="future-cruises" class="table-header">Future cruises</h1>
   <%= render :partial => "cruise_table", :locals => {:cruises => @future_cruises, :future => true} %>
