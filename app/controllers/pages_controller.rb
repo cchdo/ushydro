@@ -2,6 +2,9 @@ class PagesController < ApplicationController
 
     layout "standard"
 
+    def home
+    end
+
     ALLOWED_SORT_DIRS = ['ASC', 'DESC']
 
     def cruises

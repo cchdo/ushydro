@@ -196,12 +196,8 @@ ol {
 }
 #logo {
 	position: relative;
-  	left: 10px;
+  left: 10px;
 	top: 28px;
-  	background-image: url("/images/ushydro_logo.png");
-  	background-repeat: no-repeat;
-	width: 400px;
-	height: 40px;
 }
 
 #logo p {
@@ -897,6 +893,12 @@ float:left;
 	-moz-border-radius-topleft: 8px;
 	-moz-border-radius-topright: 8px;
 }
+#side_navigation_header {
+  text-align:center;
+  color:#06629b;
+  font-weight:bold;
+  padding: 0 0 0 0;
+}
 #side_navigation_header a{
 	text-transform: uppercase;
 	padding-left: 0px !important;
@@ -929,6 +931,31 @@ float:left;
 	padding:7.5px 7.5px 7.5px 12px;
 	text-decoration: none;
 	color: #696969;
+}
+
+.outreach_tile {
+  background-color: #F0F8FF;
+  border: 1.5px solid #4682b4;
+  border-top: 8px solid #4682b4;
+  border-bottom: 4px solid #4682b4;
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  padding: 0.5em;
+  position: relative;
+  width: 435px;
+  color: #353535;
+}
+.outreach_tile img {
+  margin-top: 0;
+  margin-right: 1.5em;
+  height: 62px;
+}
+.outreach_tile p {
+  margin-top: 0.2em;
+  width: auto;
 }
 
 /*-------------virtual cruise bottom navigation----------*/
