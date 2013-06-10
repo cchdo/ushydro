@@ -22,6 +22,11 @@ end
         <th scope="col" class="doc-results">Underway ADCP data</th>
         <th scope="col" class="doc-results">Lowered ADCP data</th>
         <th scope="col" class="doc-results">Underway Met. data</th>
+      <% else -%>
+        <th scope="col" class="doc-results">&nbsp;</th>
+        <th scope="col" class="doc-results">&nbsp;</th>
+        <th scope="col" class="doc-results">&nbsp;</th>
+        <th scope="col" class="doc-results">&nbsp;</th>
       <% end -%>
     </tr>
   </thead>
@@ -38,10 +43,15 @@ end
         <td class="ports"><%= cruises_port(cruise) %></td>
         <td class="contacts"><%= cruise.contact %></td>
         <% if not future -%>
-        <td class="doc-results"><%= cruises_underway_nav_link(cruise) %></td>
-        <td class="doc-results"><%= cruises_underway_adcp_link(cruise) %></td>
-        <td class="doc-results"><%= cruises_lowered_adcp_link(cruise) %></td>
-        <td class="doc-results"><%= cruises_underway_meta_link(cruise) %></td>
+          <td class="doc-results"><%= cruises_underway_nav_link(cruise) %></td>
+          <td class="doc-results"><%= cruises_underway_adcp_link(cruise) %></td>
+          <td class="doc-results"><%= cruises_lowered_adcp_link(cruise) %></td>
+          <td class="doc-results"><%= cruises_underway_meta_link(cruise) %></td>
+        <% else -%>
+          <td class="doc-results"></td>
+          <td class="doc-results"></td>
+          <td class="doc-results"></td>
+          <td class="doc-results"></td>
         <% end -%>
       </tr>
     <% end -%>

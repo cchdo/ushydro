@@ -643,30 +643,33 @@ maps img {
   width: auto;
 }
 .cruises-table .name {
-  width: 12em;
-}
-.cruises-table .expocode,
-#box-table-a.cruise-data-links .expocode {
-  width: 6em;
+  width: 10%;
 }
 .cruises-table .dates {
-  width: 7em;
+  width: 14.8%;
 }
 .cruises-table .dates .date {
   white-space: nowrap;
 }
+.cruises-table .expocode,
+#box-table-a.cruise-data-links .expocode {
+  width: 9.6%;
+}
 .cruises-table .ports {
-  width: 15em;
+  width: 7.15%;
 }
 .cruises-table .ship {
-  width: 4em;
+  width: 5.1%;
 }
 .cruises-table .days,
 .cruises-table .stations {
-  width: 2em;
+  width: 7.275%;
+}
+.cruises-table .contacts {
+  width: 10.8%;
 }
 .cruises-table .doc-results {
-  width: 3em;
+  width: 7%;
 }
 
 h1.table-header {
