@@ -746,9 +746,16 @@ float:left;
 #sub_content_text {
 	width: 370px;
 }
-#cruise_sub_header {
-	font-weight:bold;
-	margin-top:10px;
+.outreach-div-item {
+  margin: 0.2em 0 0.5em 0;
+}
+.outreach-div-item p {
+  margin: 0.1em;
+}
+#cruise_sub_header,
+.outreach-div-item h3 {
+  font-size: 1.2em;
+	margin: 0.2em 0 0.2em 0;
 	color: #06629B;
 	text-transform: uppercase;
 }
@@ -765,17 +772,19 @@ float:left;
 	margin-top: -260px;
 	width:517px;
 }
+.outreach_main_content h1,
 #outreach_page_title {
 	position: relative;
 	text-align: left;
-	width: 98%;
-	font-size: 140%;
+	width: 100%;
+	font-size: 1.4em;
 	text-transform: uppercase;
 	font-weight: bold;
 	color:#06629B ;
 }	
 
-#outreach_header_title {
+#outreach_header_title,
+.outreach_header_title {
 	position: relative;
 	text-align:left;
 	margin-top: 10px;
@@ -783,12 +792,15 @@ float:left;
 	color: #333333;
 	font-weight: bold;
 }
-#outreach_division_header {
-	position: relative;
-	text-align:left;
-	margin-top: 30px;	
+.outreach-division {
+  margin: 0.2em 0;
+}
+#outreach_division_header,
+.outreach_main_content .outreach-division h2 {
+  padding-top: 0;
+  margin: 0.3em 0;
 	color: #333333;
-	font-weight: bold;
+	font-size: 2em;
 }
 #dotted_bar {
 	border-bottom: 0.5px dotted #a9a9a9;
@@ -826,11 +838,8 @@ float:left;
 }
 #outreach_descriptive_text {
 	color: #696969;
-	font-weight:bold;
 	font-size: medium;
-	margin-bottom: -5px;
-	margin-top: 5px;
-
+  margin: 0.2em 0;
 }
 #outreach_descriptive_text a:link {
 	color: #a9a9a9 !important;

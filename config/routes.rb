@@ -39,6 +39,7 @@ ActionController::Routing::Routes.draw do |map|
  # end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
+  # Root is not mapped to a pages function because of the need for a different _nav_menu
   map.root :controller => "home"
 
   map.repeathydro_map "/repeathydro_map.html", :controller => "pages", :action => "repeathydro_map"
@@ -53,20 +54,10 @@ ActionController::Routing::Routes.draw do |map|
   map.blog 'blog/:post_type/:post_date', :controller => 'blog', :action => 'show'
   map.progress_positions 'progress/positions', :controller => 'progress', :action => 'positions'
   map.progress_posts 'progress/posts', :controller => 'progress', :action => 'posts'
-
-  # Install the default routes as the lowest priority.
-  #map.connect ':controller/:action/:id.:format', :format => 'html'
-  map.connect ':controller.:format', :format => 'html'
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
   
-  # map.connect 'outreach/:content', :controller => 'outreach', :action => 'content'
-
   # map.connect virtual_cruise_path => "/virtual_cruise/"
   
   # map.connect ':virtual_cruise', :controller => 'static', :action => 'rerout'
-  # Mapping for static controller
-  map.connect '*path', :controller => 'static'
   #map.connect 'staff', :controller => 'staff/events'
   #Auth::Application.routes.draw do
    #map.connect "log_in" => "sessions#new", :as => "log_in"
@@ -77,4 +68,13 @@ ActionController::Routing::Routes.draw do |map|
    #resources :users
    #resources :sessions
   ##end
+
+  # Install the default routes as the lowest priority.
+  #map.connect ':controller/:action/:id.:format', :format => 'html'
+  map.connect ':controller.:format', :format => 'html'
+  map.connect ':controller/:action/:id'
+  map.connect ':controller/:action/:id.:format'
+
+  # Mapping for static controller
+  map.connect '*path', :controller => 'static'
 end
