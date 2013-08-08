@@ -33,12 +33,12 @@ class PagesController < ApplicationController
         @cruises = Cruise.all(
             :joins => [:ship],
             :include => [:ship, :start_port, :end_port],
-            :conditions => ['start_date < ?', Date.today],
+            :conditions => ['start_date < ? AND end_date IS NOT NULL', Date.today],
             :order => "#{sort_col} #{sort_dir}")
         @future_cruises = Cruise.all(
             :joins => [:ship], 
             :include => [:ship, :start_port, :end_port],
-            :conditions => ['start_date >= ?', Date.today],
+            :conditions => ['start_date >= ? OR end_date IS NULL', Date.today],
             :order => "#{sort_col} #{sort_dir}")
     end
 
