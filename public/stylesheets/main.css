@@ -802,6 +802,32 @@ float:left;
 	color: #333333;
 	font-size: 2em;
 }
+#outreach_dayinlife_header,
+.outreach_main_content .outreach-division h2 {
+        padding-top: 0;
+        margin: 0.3em 0;
+	color: #333333;
+	font-size: 2em;
+	clear:both;
+}
+.dayinlife img {	
+	width: 200px;
+	margin-bottom: 1em;
+}
+.dayinlife {
+	clear: both;
+}
+.dayinlife h4 {
+	margin-left: 14.5em;
+	padding-top: 1em;
+	color: #06629B;
+}
+.dayinlife a {
+	display:block;
+}
+.dayinlife p {
+	text-decoration: none;
+}
 #dotted_bar {
 	border-bottom: 0.5px dotted #a9a9a9;
 	margin-bottom: 1em;
